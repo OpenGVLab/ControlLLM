@@ -15,24 +15,16 @@ We present ControlLLM, a novel framework that enables large language models (LLM
 
 ## Motivation
 
-**Comparison of different paradigms for task planning.**
-<div style="text-align:center">
-    <img width="800" alt="image" src="assets/moti.png">
-</div>
-
-(a) Chain of Thought (CoT), CoT with self-consistency and (b) Tree of Thoughts (ToT) essentially rely on the LLMs to perform task planning, where the edge is actually formed by LLMs at run time. (c) The Thoughts-on-Graph (ToG) paradigm in our method searches for solutions on a pre-built graph that captures the dependencies of tools, which avoids the hallucination problem in tool invocation.
+![Comparison of different paradigms for task planning](https://github.com/OpenGVLab/ControlLLM/assets/13723743/56534638-f8c1-4707-ab16-917df40dfb39)
 
 ## 🏠 Overview
 
-<div style="text-align:center">
-    <img width="800" alt="image" src="assets/arch.png">
-</div>
+![arch](https://github.com/OpenGVLab/ControlLLM/assets/13723743/e5672074-59f7-4260-8ad7-9f373e8e767c)
+
 
 ## 🎁 Features
 
-<div style="text-align:center">
-    <img width="800" alt="image" src="assets/camparison.bmp">
-</div>
+![features](https://github.com/OpenGVLab/ControlLLM/assets/13723743/9cb12c03-8fc6-4d38-80e1-dedc9568ff14)
 
 
 ## 🎫 License
