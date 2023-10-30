@@ -6,6 +6,7 @@ We present ControlLLM, a novel framework that enables large language models (LLM
 
 ## 🤖 Video Demo
 
+https://github.com/OpenGVLab/ControlLLM/assets/13723743/cf72861e-0e7b-4c15-89ee-7fa1d838d00f
 
 
 ## 🗓️ Schedule
