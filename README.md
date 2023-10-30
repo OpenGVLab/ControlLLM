@@ -34,7 +34,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## 🖊️ Citation
 
-If you find this project useful in your research, please consider cite:
+If you find this project useful in your research, please cite our paper:
 
 ```BibTeX
 @article{2023controlllm,
