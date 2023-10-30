@@ -1,4 +1,4 @@
-# ControlLLM [[Paper]()] 
+# ControlLLM [[Paper](https://arxiv.org/abs/2310.17796)] 
 
 <!-- ## Description -->
 
@@ -44,5 +44,10 @@ This project is released under the [Apache 2.0 license](LICENSE).
 If you find this project useful in your research, please consider cite:
 
 ```BibTeX
-
+@article{2023controlllm,
+  title={ControlLLM: Augment Language Models with Tools by Searching on Graphs},
+  author={Liu, Zhaoyang and Lai, Zeqiang and Gao Zhangwei and Cui, Erfei and Li, Zhiheng and Zhu, Xizhou and Lu, Lewei and Chen, Qifeng and Qiao, Yu and Dai, Jifeng and Wang Wenhai},
+  journal={arXiv preprint arXiv:2305.10601},
+  year={2023}
+}
 ```
