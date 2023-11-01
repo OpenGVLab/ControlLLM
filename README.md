@@ -14,7 +14,7 @@ https://github.com/OpenGVLab/ControlLLM/assets/13723743/cf72861e-0e7b-4c15-89ee-
 - [ ] Release code
   
 
-## Motivation
+## 💡 Motivation
 
 ![Comparison of different paradigms for task planning](https://github.com/OpenGVLab/ControlLLM/assets/13723743/56534638-f8c1-4707-ab16-917df40dfb39)
 
