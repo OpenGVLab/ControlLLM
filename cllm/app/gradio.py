@@ -491,8 +491,10 @@ def app(controller="cllm.agents.tog.Controller", https=False, **kwargs):
             """
             <div align='center'> <h1>ControlLLM </h1> </div>
             <p align="center"> A framework for multi-modal interaction which is able to control LLMs over invoking tools more accurately. </p>
-            <p align="center"><a href="https://github.com/OpenGVLab/ControlLLM"><b>GitHub</b></a>
-            &nbsp;&nbsp;&nbsp; <a href="https://arxiv.org/abs/2311.11797"><b>ArXiv</b></a></p>
+            <p align="center"><a href="https://arxiv.org/abs/2311.11797"><b>ArXiv</b></a>
+            &nbsp;&nbsp;&nbsp; <a href="https://github.com/OpenGVLab/ControlLLM"><b>GitHub</b></a>
+            &nbsp;&nbsp;&nbsp; <a href="https://controlllm.github.io/"><b>Project Page</b></a>
+            &nbsp;&nbsp;&nbsp; <a href="https://huggingface.co/spaces/OpenGVLab/ControlLLM"><b>🤗 Space</b></a></p>
             """,
         )
 
