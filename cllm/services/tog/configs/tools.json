@@ -1,0 +1,1253 @@
+[
+    {
+        "name": "image_question_answering",
+        "description": "answers a question about an image",
+        "domain": "visual-question-answering",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image containing the information"
+            },
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the question about the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "response",
+                "type": "text",
+                "description": "output response"
+            }
+        ]
+    },
+    {
+        "name": "get_weather",
+        "description": "Query the weather conditions by given location. For example: what is the weather in Beijing? how cold is in New York? etc.",
+        "domain": "question-answering",
+        "args": [
+            {
+                "name": "location",
+                "type": "location",
+                "description": "the location where the weather is to be queried"
+            }
+        ],
+        "returns": [
+            {
+                "name": "result",
+                "type": "weather",
+                "description": "weather information"
+            }
+        ]
+    },
+    {
+        "name": "get_time",
+        "description": "get current date",
+        "domain": "question-answering",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "input text"
+            }
+        ],
+        "returns": [
+            {
+                "name": "response",
+                "type": "time",
+                "description": "output time"
+            }
+        ]
+    },
+    {
+        "name": "image_captioning",
+        "description": "Generate a caption or description for the image. It can generate a detailed description that can be used for image perception and image generation. For example: a) you can use this tool when you want to know what is it in the image\"; and b) when you want to generate a new image similar or resemble to input.png, you can use `image_captioning` to obtain the description about image input.png.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be captioned"
+            }
+        ],
+        "returns": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the description for the input image"
+            }
+        ]
+    },
+    {
+        "name": "partial_image_editing",
+        "description": "Given the mask denoting the region to edit,  Edit the given image at local region. Useful when you want to replace an object via a mask image. like: replace the masked object with a dog. ",
+        "domain": "image-editing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be edited"
+            },
+            {
+                "name": "mask",
+                "type": "image.mask",
+                "description": "the mask image representing the editing position"
+            },
+            {
+                "name": "prompt",
+                "type": "text",
+                "description": "the prompt specified the edition"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the edited image"
+            }
+        ]
+    },
+    {
+        "name": "text_image_editing",
+        "description": "Edit the given image based on the text prompt.",
+        "domain": "image-editing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be edited"
+            },
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the prompt specified the edition"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the edited image"
+            }
+        ]
+    },
+    {
+        "name": "image_inpainting",
+        "description": "inpaint the region of the image based on the given mask. For example: remove the dog in the image, erase the spoon in given image, etc.",
+        "domain": "image-editing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be inpainted"
+            },
+            {
+                "name": "mask",
+                "type": "image.mask",
+                "description": "the segmentation mask for the inpainting region"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the processed image"
+            }
+        ]
+    },
+    {
+        "name": "highlight_object_on_image",
+        "description": "This tool is usually used after `object_detection` `visual_grounding` and `select_bbox`. Useful when you want to: 1) highlight the region of interest on the image; 2) know where the object is. For example: highlight the elephant from image, locate the dog in the image, find the spoon in given image, detect if the object is present in the image, etc.",
+        "domain": "image-editing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            },
+            {
+                "name": "bbox",
+                "type": "bbox",
+                "description": "the bounding boxes that need to be drawn on the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "result",
+                "type": "image",
+                "description": "the new image on which the tool highlight the the region of interest by bounding boxes"
+            }
+        ]
+    },
+    {
+        "name": "image_cropping",
+        "description": "Crop the image based on the given bounding box. Useful when you want to crop the dog in the image, crop the spoon in given image, etc.",
+        "domain": "image-editing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            },
+            {
+                "name": "object",
+                "type": "bbox",
+                "description": "the detected object"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the cropped image"
+            }
+        ]
+    },
+    {
+        "name": "text_to_image",
+        "description": "generate an image based on the given description.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_image",
+        "description": "generate an new image based on the given image.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the given image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "line_text_to_image",
+        "description": "generate an image based on the given description and line map.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "line",
+                "type": "image.line",
+                "description": "the line map outlining the line of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "hed_text_to_image",
+        "description": "generate an image based on the given description and HED map (holistically-nested edge detection).",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "hed",
+                "type": "image.hed",
+                "description": "the HED map outlining the edge of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "scribble_text_to_image",
+        "description": "generate an image based on the given description and the scribble.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "scribble",
+                "type": "image.scribble",
+                "description": "the scribble outlining the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "pose_text_to_image",
+        "description": "generate an image based on the given description and the pose.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "pose",
+                "type": "image.pose",
+                "description": "the pose of the human in the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "segmentation_text_to_image",
+        "description": "generate an image based on the given description and segmentation mask.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "segmentation",
+                "type": "image.segmentation",
+                "description": "the segmentation mask describing the structure of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "edge_text_to_image",
+        "description": "generate an image based on the given description and edge map.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "edge",
+                "type": "image.edge",
+                "description": "the edge map describing the structure of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "depth_text_to_image",
+        "description": "generate an image based on the given description and depth map.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "depth",
+                "type": "image.depth",
+                "description": "the depth map describing the structure of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "normal_text_to_image",
+        "description": "generate an image based on the given description and normal map.",
+        "domain": "image-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the text describing the image"
+            },
+            {
+                "name": "normal",
+                "type": "image.normal",
+                "description": "the normal map describing the structure of the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the generated image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_edge",
+        "description": "get the edge map of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "edge",
+                "type": "image.edge",
+                "description": "the edge map of the image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_line",
+        "description": "get the line map of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "line",
+                "type": "image.line",
+                "description": "the line map of the image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_hed",
+        "description": "get the HED map of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "hed",
+                "type": "image.hed",
+                "description": "the hed map of the image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_scribble",
+        "description": "get the scribble of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "scribble",
+                "type": "image.scribble",
+                "description": "the scribble of the image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_pose",
+        "description": "Get the pose of the image. It is usually used in image generation conditioned on pose map from input image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "pose",
+                "type": "image.pose",
+                "description": "the pose of the image"
+            }
+        ]
+    },
+    {
+        "name": "image_to_depth",
+        "description": "get the depth map of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "depth",
+                "type": "image.depth",
+                "description": "the depth map"
+            }
+        ]
+    },
+    {
+        "name": "image_to_normal",
+        "description": "get the normal map of the image.",
+        "domain": "image-processing",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "normal",
+                "type": "image.normal",
+                "description": "the normal map"
+            }
+        ]
+    },
+    {
+        "name": "object_detection",
+        "description": "detect all the objects in the image.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that contains the objects"
+            }
+        ],
+        "returns": [
+            {
+                "name": "object",
+                "type": "bbox",
+                "description": "the detected objects in json format. example output: [\\{'score': 0.9994931221008301, 'label': 'dog', 'box': \\{'xmin': 466, 'ymin': 301, 'xmax': 1045, 'ymax': 583\\}\\}]"
+            }
+        ]
+    },
+    {
+        "name": "image_classification",
+        "description": "classify the objects in the image.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that contains the objects"
+            }
+        ],
+        "returns": [
+            {
+                "name": "category",
+                "type": "category",
+                "description": "the categories in json format. example output: [\\{'score': 0.9, 'label': 'dog'\\}]"
+            }
+        ]
+    },
+    {
+        "name": "video_classification",
+        "description": "Classify the video and detect the actions in the video.",
+        "domain": "video-perception",
+        "args": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "the given video"
+            }
+        ],
+        "returns": [
+            {
+                "name": "category",
+                "type": "category",
+                "description": "the categories in json format. example output: [\\{'score': 0.9, 'label': 'Playing basketball'\\}]"
+            }
+        ]
+    },
+    {
+        "name": "image_instance_segmentation",
+        "description": "segment the common objects in the given image.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be segmented"
+            }
+        ],
+        "returns": [
+            {
+                "name": "mask",
+                "type": "image.mask",
+                "description": "the output mask"
+            }
+        ]
+    },
+    {
+        "name": "image_segmentation_by_mask",
+        "description": "segment the given image with the prompt mask.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be segmented"
+            },
+            {
+                "name": "prompt_mask",
+                "type": "image.mask",
+                "description": "the prompt mask that guides the segmentation"
+            }
+        ],
+        "returns": [
+            {
+                "name": "mask",
+                "type": "image.mask",
+                "description": "the output mask"
+            }
+        ]
+    },
+    {
+        "name": "image_segmentation_by_points",
+        "description": "segment the given image with the prompt points.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be segmented"
+            },
+            {
+                "name": "prompt_points",
+                "type": "point",
+                "description": "the prompt points that guides the segmentation"
+            }
+        ],
+        "returns": [
+            {
+                "name": "mask",
+                "type": "image.mask",
+                "description": "the output mask"
+            }
+        ]
+    },
+    {
+        "name": "segment_anything",
+        "description": "Segment the given image without other inputs. This tool return the segmentation map for input image. The segmentation can be used to generate a new image.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be segmented"
+            }
+        ],
+        "returns": [
+            {
+                "name": "segmentation",
+                "type": "image.segmentation",
+                "description": "the output segmentation"
+            }
+        ]
+    },
+    {
+        "name": "visual_grounding",
+        "description": "Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query. The query can be a phrase, a sentence or even a multi-round dialogue.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be processed"
+            },
+            {
+                "name": "query",
+                "type": "text",
+                "description": "a query that can be a phrase, a sentence"
+            }
+        ],
+        "returns": [
+            {
+                "name": "bbox",
+                "type": "bbox",
+                "description": "the detected bounding boxes for "
+            }
+        ]
+    },
+    {
+        "name": "optical_character_recognition",
+        "description": "Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format.",
+        "domain": "image-perception",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "the image that need to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "the recognized text"
+            }
+        ]
+    },
+    {
+        "name": "select_category",
+        "description": "select the target classes in category list with the given condition.",
+        "domain": "general",
+        "args": [
+            {
+                "name": "category_list",
+                "type": "category",
+                "description": "the list to be processed"
+            },
+            {
+                "name": "condition",
+                "type": "text",
+                "description": "the condition to select objects"
+            }
+        ],
+        "returns": [
+            {
+                "name": "target_category_result",
+                "type": "category",
+                "description": "the selected list"
+            }
+        ]
+    },
+    {
+        "name": "select_bbox",
+        "description": "select the bounding boxes with the given condition.",
+        "domain": "general",
+        "args": [
+            {
+                "name": "bbox_list",
+                "type": "bbox",
+                "description": "the bounding box list to be processed"
+            },
+            {
+                "name": "condition",
+                "type": "text",
+                "description": "the condition to select objects"
+            }
+        ],
+        "returns": [
+            {
+                "name": "result",
+                "type": "bbox",
+                "description": "the selected bbox list"
+            }
+        ]
+    },
+    {
+        "name": "select_mask",
+        "description": "select the masks with the given condition.",
+        "domain": "general",
+        "args": [
+            {
+                "name": "mask_list",
+                "type": "image.mask",
+                "description": "the list to be processed"
+            },
+            {
+                "name": "condition",
+                "type": "text",
+                "description": "the condition to select objects"
+            }
+        ],
+        "returns": [
+            {
+                "name": "result",
+                "type": "image.mask",
+                "description": "the selected mask list"
+            }
+        ]
+    },
+    {
+        "name": "count_categories",
+        "description": "count target categories in the given list.",
+        "domain": "general",
+        "args": [
+            {
+                "name": "category_list",
+                "type": "category",
+                "description": "the list to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "length",
+                "type": "text",
+                "description": "the length of the given list, return in the string format.Example: The length of the given list is 10"
+            }
+        ]
+    },
+    {
+        "name": "count_objects",
+        "description": "count target objects in the given list. It is useful when you want to count the number of objects in the image",
+        "domain": "general",
+        "args": [
+            {
+                "name": "bbox_list",
+                "type": "bbox",
+                "description": "the bounding box list to be counted"
+            }
+        ],
+        "returns": [
+            {
+                "name": "length",
+                "type": "text",
+                "description": "the length of the given list, return in the string format.Example: The length of the given list is 10"
+            }
+        ]
+    },
+    {
+        "name": "count_masks",
+        "description": "count target mask in the given list.",
+        "domain": "general",
+        "args": [
+            {
+                "name": "mask_list",
+                "type": "image.mask",
+                "description": "the list to be processed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "length",
+                "type": "text",
+                "description": "the length of the given list, return in the string format.Example: The length of the given list is 10"
+            }
+        ]
+    },
+    {
+        "name": "video_captioning",
+        "description": "Generate a caption or description for video. It can generate a detailed description that can be used for video perception and video generation. For example: a) you can use this tool when you want to know what happened in the video\"; and b) when you want to generate tags for input video, you can use translate description obtained from `image_captioning` into tags.",
+        "domain": "video-perception",
+        "args": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "the video to be captioned."
+            }
+        ],
+        "returns": [
+            {
+                "name": "caption",
+                "type": "text",
+                "description": "the caption or description of input video."
+            }
+        ]
+    },
+    {
+        "name": "image_audio_to_video",
+        "description": "Generate a video with speech to introduce the image.",
+        "domain": "video-generation",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "The input image to be introduced."
+            },
+            {
+                "name": "audio",
+                "type": "audio",
+                "description": "The audio contained the speech of image description."
+            }
+        ],
+        "returns": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "Generated video that can introduce the image with speech"
+            }
+        ]
+    },
+    {
+        "name": "image_to_video",
+        "description": "Generate a video based on image.",
+        "domain": "video-generation",
+        "args": [
+            {
+                "name": "image",
+                "type": "image",
+                "description": "The input image."
+            }
+        ],
+        "returns": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "Generated video from the input image."
+            }
+        ]
+    },
+    {
+        "name": "video_to_webpage",
+        "description": "Generate a web page to promote and introduce the video.",
+        "domain": "video-processing",
+        "args": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "The input image to be introduced."
+            },
+            {
+                "name": "title",
+                "type": "title",
+                "description": "The title of video."
+            },
+            {
+                "name": "tags",
+                "type": "tags",
+                "description": "The tags of video."
+            },
+            {
+                "name": "description",
+                "type": "text",
+                "description": "The description of video."
+            }
+        ],
+        "returns": [
+            {
+                "name": "html_code",
+                "type": "html",
+                "description": "Generated HTML webpage with code that can introduce the video with speech."
+            }
+        ]
+    },
+    {
+        "name": "dub_video",
+        "description": "Dub the input video with given audio track.",
+        "domain": "video-editing",
+        "args": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "The input image to be introduced."
+            },
+            {
+                "name": "audio",
+                "type": "audio",
+                "description": "The audio of video."
+            }
+        ],
+        "returns": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "Output video with designated audio."
+            }
+        ]
+    },
+    {
+        "name": "text_to_video",
+        "description": "It takes as input a natural language description and produces a video matching that description",
+        "domain": "video-generation",
+        "args": [
+            {
+                "name": "prompt",
+                "type": "text",
+                "description": "the text describing the image"
+            }
+        ],
+        "returns": [
+            {
+                "name": "video",
+                "type": "video",
+                "description": "the generated video"
+            }
+        ]
+    },
+    {
+        "name": "text_to_music",
+        "description": "Generate music condioned on input text/prompt. For example, you can use this tool when you want to generate music for a poem, generate a piece of music from image.",
+        "domain": "audio-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "Input text for music generation."
+            }
+        ],
+        "returns": [
+            {
+                "name": "music",
+                "type": "audio",
+                "description": "Generated music conditioned on text."
+            }
+        ]
+    },
+    {
+        "name": "text_to_speech",
+        "description": "Create natural-sounding speech from text, where the speech can be generated in multiple languages and for multiple speakers",
+        "domain": "audio-generation",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text that will be translated into speech."
+            }
+        ],
+        "returns": [
+            {
+                "name": "speech",
+                "type": "audio",
+                "description": "Generated speech or voice conditioned on text."
+            }
+        ]
+    },
+    {
+        "name": "audio_classification",
+        "description": "Audio classification is the task of assigning a label or class to a given audio. It can be used for recognizing which command a user is giving or the emotion of a statement, as well as identifying a speaker.",
+        "domain": "audio-perception",
+        "args": [
+            {
+                "name": "audio",
+                "type": "audio",
+                "description": "The input audio that will be classified."
+            }
+        ],
+        "returns": [
+            {
+                "name": "speech",
+                "type": "category",
+                "description": "The recognized categories in json format."
+            }
+        ]
+    },
+    {
+        "name": "text_to_text_generation",
+        "description": "Text to text generation. It can be used for sentence acceptability judgment, Sentiment analysis, Paraphrasing/sentence similarity, Natural language inference, Sentence completion, Word sense disambiguation, Question answering.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text"
+            }
+        ],
+        "returns": [
+            {
+                "name": "answer",
+                "type": "text",
+                "description": "Generated answer for given input."
+            }
+        ]
+    },
+    {
+        "name": "title_generation",
+        "description": "Generate a title for given text.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text"
+            }
+        ],
+        "returns": [
+            {
+                "name": "title",
+                "type": "title",
+                "description": "Generated title based given sentences."
+            }
+        ]
+    },
+    {
+        "name": "openai_chat_model",
+        "description": "Answer the question by Large Language Model. It is useful for tasks such as generating content, answering questions, engaging in conversations and providing explanations. However, it still has some limitations. For example, it can not directly access the up-to-date information like time, weather, etc.",
+        "domain": "question-answering",
+        "args": [
+            {
+                "name": "input_msg",
+                "type": "text",
+                "description": "The input text"
+            }
+        ],
+        "returns": [
+            {
+                "name": "answer",
+                "type": "text",
+                "description": "Generated answer based given text."
+            }
+        ]
+    },
+    {
+        "name": "summarization",
+        "description": "Summarize sentences, long narratives, articles, papers, textbooks.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text to be Summarized."
+            }
+        ],
+        "returns": [
+            {
+                "name": "summarized_text",
+                "type": "text",
+                "description": "Summarized text."
+            }
+        ]
+    },
+    {
+        "name": "text_to_tags",
+        "description": "Predict the tags of text, article and papers by using the their textual content as input",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text to be Summarized."
+            }
+        ],
+        "returns": [
+            {
+                "name": "tags",
+                "type": "tags",
+                "description": "The extracted tags from input text"
+            }
+        ]
+    },
+    {
+        "name": "named_entity_recognition",
+        "description": "Named-entity recognition (NER) (also known as (named) entity identification, entity chunking, and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text from which the named entities are extracted"
+            }
+        ],
+        "returns": [
+            {
+                "name": "tags",
+                "type": "tags",
+                "description": "The extracted entities"
+            }
+        ]
+    },
+    {
+        "name": "sentiment_analysis",
+        "description": "Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text to be analyzed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The sentiment of text"
+            }
+        ]
+    },
+    {
+        "name": "extract_location",
+        "description": "Extracts the locale name from the text. For example, if the text is 'what is the weather in Beijing', the tool will return 'Beijing'. If the text is 'Samuel ppops in a happy plce called Berlin which happens to be Kazakhstan', the tool will return 'Berlin,Kazakhstan'.",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "text",
+                "type": "text",
+                "description": "The input text to be analyzed"
+            }
+        ],
+        "returns": [
+            {
+                "name": "location",
+                "type": "location",
+                "description": "The extracted location from text"
+            }
+        ]
+    },
+    {
+        "name": "summarize_weather_condition",
+        "description": "Translate the json formatted weather information into the text that human can understand. For example, when you want to generate a new image based on weather information",
+        "domain": "natural-language-processing",
+        "args": [
+            {
+                "name": "weather",
+                "type": "weather",
+                "description": "weather condition"
+            }
+        ],
+        "returns": [
+            {
+                "name": "weather_summary",
+                "type": "text",
+                "description": "the weather summary"
+            }
+        ]
+    }
+]
