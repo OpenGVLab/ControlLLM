@@ -34,7 +34,8 @@ https://github.com/OpenGVLab/ControlLLM/assets/13723743/cf72861e-0e7b-4c15-89ee-
   
 ## 🗓️ Schedule
 
-+ [x] Rlease online [demo](https://cllm.opengvlab.com) and 🤗Hugging Face [space](https://huggingface.co/spaces/OpenGVLab/ControlLLM).
+- ✅ (🔥 New) Rlease online [demo](https://cllm.opengvlab.com) and 🤗Hugging Face [space](https://huggingface.co/spaces/OpenGVLab/ControlLLM).
+- ✅ (🔥 New) Support [PixArt-alpha](https://github.com/PixArt-alpha/PixArt-alpha), a state-of-the-art method for Text-to-Image synthesis.
 
 ## 🛠️Installation
 
