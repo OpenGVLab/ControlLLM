@@ -1,6 +1,4 @@
-
-
-<img src="https://github.com/liu-zhy/graph-of-thought/assets/26198430/4e8b2511-ce69-4c1a-95a1-5aed4d432a82" width=10% align="left" /> 
+<img src="https://github.com/OpenGVLab/ControlLLM/assets/13723743/5ee0314a-d983-444a-8671-88cc0b52b752" width=10% align="left" /> 
 
 # ControlLLM
 
@@ -17,7 +15,7 @@ https://github.com/OpenGVLab/ControlLLM/assets/13723743/cf72861e-0e7b-4c15-89ee-
 
 ## 🏠 System Overview
 
-![arch](https://github.com/liu-zhy/graph-of-thought/assets/95175307/ad3db5c1-f1c7-4e1f-be48-81ed5228f2b0#center)
+![arch](https://github.com/OpenGVLab/ControlLLM/assets/13723743/dd051971-e5f8-4eaf-96e8-79987ec67ab9#center)
 
 ## 🎁 Major Features 
 - Image Perception
