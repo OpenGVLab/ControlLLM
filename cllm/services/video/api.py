@@ -8,6 +8,7 @@ import av
 import numpy as np
 import moviepy.editor as mpe
 from cllm.services.utils import get_bytes_value
+from cllm.services.nlp.api import openai_chat_model
 
 __ALL__ = [
     "video_classification",
@@ -72,8 +73,46 @@ def image_to_video(image: str | Path, **kwargs):
 def text_to_video(prompt: str, **kwargs):
     host = kwargs.get("host", HOST)
     port = kwargs.get("port", PORT)
+    human_msg = f"""Your task is to extract the prompt from input. Here is examples:
+
+    Input:
+    Can you make a video of a serene lake with vibrant green grass and trees all around? And then create a webpage using HTML to showcase this video?
+
+    Answer:
+    a serene lake with vibrant green grass and trees all around
+
+    Input:
+    generate a new video that A panda is playing guitar on times square
+
+    Answer:
+    A panda is playing guitar on times square
+
+    Input:
+    a video of A man riding a bicycle in the sunshine. Then develop a HTML web page to present this video
+
+    Answer:
+    A man riding a bicycle in the sunshine
+
+    Input:
+    Create a video that showcases a serene lake embraced by vibrant foliage and towering trees. Afterward, produce an HTML webpage to present and describe this captivating video
+
+    Answer:
+    a serene lake embraced by vibrant foliage and towering trees
+
+    Input:
+    make a video that illustrates an astronaut is skiing down the hill
+
+    Answer:
+    an astronaut is skiing down the hill
+
+    Input:
+    {prompt}
+
+    Answer:
+    """
+    extracted_prompt = openai_chat_model(human_msg)
+    data = {"prompt": extracted_prompt}
     url = f"http://{host}:{port}/text_to_video"
-    data = {"prompt": prompt}
     response = requests.post(url, data=data)
     return response.content
 

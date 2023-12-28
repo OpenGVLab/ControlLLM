@@ -53,6 +53,7 @@ from cllm.services.audio.api import (
     text_to_music,
     text_to_speech,
     audio_classification,
+    speech_to_text,
 )
 
 # from cllm.services.sam.api import (
@@ -135,11 +136,6 @@ QUESTION_ANSWERING_TOOLS = [
         description="get current date",
         domain=Tool.Domain.QUESTION_ANSWERING,
         args=[
-            # Tool.Argument(
-            #     name="location",
-            #     type=DataType.LOCATION,
-            #     description="location where the time is to be queried",
-            # ),
             Tool.Argument(
                 name="text",
                 type=DataType.TEXT,
@@ -1297,6 +1293,26 @@ AUDIO_TOOLS = [
             )
         ],
         model=audio_classification,
+    ),
+    Tool(
+        name="speech_to_text",
+        description="Transcribe the speech to text. It can be used for speech recognition, speech to text, speech to subtitle, etc.",
+        domain=Tool.Domain.AUDIO_PERCEPTION,
+        args=[
+            Tool.Argument(
+                name="speech",
+                type=DataType.AUDIO,
+                description="The input audio that will be classified.",
+            ),
+        ],
+        returns=[
+            Tool.Argument(
+                name="text",
+                type=DataType.TEXT,
+                description="The transcribed text.",
+            )
+        ],
+        model=speech_to_text,
     ),
 ]
 

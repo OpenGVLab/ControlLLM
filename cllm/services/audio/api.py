@@ -92,6 +92,15 @@ def text_to_speech(text: str, **kwargs):
     return response.content
 
 
+def speech_to_text(audio: str, **kwargs):
+    host = kwargs.get("host", HOST)
+    port = kwargs.get("port", PORT)
+    url = f"http://{host}:{port}/speech_to_text"
+    files = {"audio": (audio, get_bytes_value(audio))}
+    response = requests.post(url, files=files)
+    return response.json()
+
+
 def text_to_music(text: str, **kwargs):
     # print('a' * 40)
     host = kwargs.get("host", HOST)

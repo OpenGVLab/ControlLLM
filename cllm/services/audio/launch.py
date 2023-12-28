@@ -3,6 +3,7 @@ import os
 import uuid
 import numpy as np
 import os.path as osp
+import whisper
 import uvicorn
 from fastapi import UploadFile, File, Form
 from fastapi.responses import JSONResponse, StreamingResponse, FileResponse
@@ -64,6 +65,18 @@ async def text_to_speech(text: str = Form(...)):
         data=speech["audio"][0].astype(np.float32),
     )
     return AudioResponse(save_path)
+
+
+@app.post("/speech_to_text")
+@pool.register(lambda: whisper.load_model("base", args.device))
+async def speech_to_text(audio: UploadFile = File(None)):
+    model = speech_to_text.__wrapped__.model
+    save_path = osp.join(RESOURCE_ROOT, f"{str(uuid.uuid4())[:6]}_audio.wav")
+    with open(save_path, "wb") as fout:
+        fout.write(audio.file.read())
+    result = model.transcribe(save_path)
+    text = result["text"]
+    return JSONResponse(text)
 
 
 if __name__ == "__main__":

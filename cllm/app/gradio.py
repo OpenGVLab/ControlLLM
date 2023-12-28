@@ -22,6 +22,7 @@ from gradio.components.image_editor import Brush
 
 from cllm.agents.builtin import plans
 from cllm.services.general.api import remote_logging
+from cllm.services.audio.api import speech_to_text
 from cllm.agents import container, FILE_EXT
 from cllm.utils import get_real_path, plain2md, md2plain
 import openai
@@ -254,9 +255,9 @@ class InteractionLoop:
 
     def add_audio(self, history, audio, role="assistant", append=False):
         assert role in ["human", "assistant"]
-        result = self.whisper.transcribe(audio)
-        text = result["text"]
-        logger.info(f"add audio: {text}")
+        text = speech_to_text(audio)
+        logger.info(f"add audio: {audio}")
+        logger.info(f"transcribe audio into text: {text}")
         return self.add_text(history, text, role=role, append=append)
 
     def plan(self, user_state, input_image, history, history_plan):
@@ -287,7 +288,7 @@ class InteractionLoop:
                 "The whole process will take some time, please be patient.<br><br>"
             )
             history, _ = self.add_text(
-                history, output_text, role="assistant", append=True
+                history, output_text, role="assistant", append=False
             )
             yield user_state, input_image, history, history_plan
             task_decomposition = next(solution)
@@ -553,6 +554,7 @@ def app(controller="cllm.agents.tog.Controller", https=False, **kwargs):
                                 "Can you make a video of a serene lake with vibrant green grass and trees all around? And then create a webpage using HTML to showcase this video?",
                                 "Generate an image that shows a beautiful landscape with a calm lake reflecting the blue sky and white clouds. Then generate a video to introduce this image.",
                                 "replace the masked object with a cute yellow dog",
+                                "replace the sheep with a cute dog in the image",
                                 "Recognize the action in the video",
                                 "Generate an image where a astronaut is riding a horse",
                                 "Please generate a piece of music from the given image",
@@ -560,6 +562,7 @@ def app(controller="cllm.agents.tog.Controller", https=False, **kwargs):
                                 "What’s the weather situation in Berlin? Can you generate a new image that represents the weather in there?",
                                 "Can you recognize the text from the image and tell me how much is Eggs Florentine?",
                                 "Generate a piece of music for this video and dub this video with generated music",
+                                "Fabricate a video that depicts a panda eating bamboo on a rock. Then dub the video with a piece of suitable music. Finally, create an HTML web page to promote this captivating video",
                                 "Generate a new image based on depth map from input image",
                                 "Remove the cats from the image_1.png, image_2.png, image_3.png",
                                 "I need the banana removed from the c4c40e_image.png, 9e867c_image.png, 9e13sc_image.png",
@@ -590,6 +593,9 @@ def app(controller="cllm.agents.tog.Controller", https=False, **kwargs):
                             click_image_submit_btn = gr.Button(
                                 "Upload", variant="primary"
                             )
+                        gr.HTML(
+                            """<body><span style="font-family:verdana;color:#FE0A0A";>Note: </span> After clicking the following image, you need to immediately press the `Upload` button to upload the image. Then you can click the image to select the point.<body>"""
+                        )
                         gr.Examples(
                             [
                                 osp.join("./assets/resources", item)

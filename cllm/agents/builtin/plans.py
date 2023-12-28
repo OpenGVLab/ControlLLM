@@ -36,6 +36,7 @@ BUILTIN_IMAGE2MUSIC = "Generate a piece of music for this image"
 BUILTIN_VIDEO2MUSIC = (
     "Generate a piece of music for this video and dub the video with generated music"
 )
+BUILTIN_SPEECH_TO_TEXT = "transcribe the speech into text"
 
 BUILTIN_PLANS = {
     # BUILTIN_REMOVE_BY_MASK: [
@@ -607,6 +608,15 @@ BUILTIN_PLANS = {
     #         )
     #     ]
     # ],
+    BUILTIN_SPEECH_TO_TEXT: [
+        [
+            Action(
+                tool_name="speech_to_text",
+                inputs={"speech": "audio"},
+                outputs=["<GENERATED>-0"],
+            )
+        ]
+    ],
 }
 
 

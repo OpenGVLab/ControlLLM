@@ -5,7 +5,7 @@ import io
 import os
 
 import requests
-from cllm.servcies.utils import get_bytes_value
+from cllm.services.utils import get_bytes_value
 
 __ALL__ = [
     "inpainting_ldm",
