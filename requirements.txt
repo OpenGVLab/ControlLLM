@@ -54,6 +54,7 @@ regex==2023.10.3
 rotary-embedding-torch==0.4.0
 scipy==1.11.4
 soundfile==0.12.1
+git+https://github.com/facebookresearch/segment-anything.git
 termcolor==2.4.0
 tiktoken==0.3.3
 timm==0.6.13

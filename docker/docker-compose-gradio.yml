@@ -1,0 +1,42 @@
+services:
+  cllm_graido:
+    build: .
+    image: "cllm:v0"
+    container_name: "cllm_graido"
+    restart: "unless-stopped"
+    ports:
+      - "10004:10004"
+      - "10005:10005"
+      - "10024:10024"
+    volumes:
+      - ../model_zoo:/root/ControlLLM/model_zoo
+      - ../certificate:/root/ControlLLM/certificate
+      - ../client_resources:/root/ControlLLM/client_resources
+      - ~/.cache/huggingface/hub:/root/.cache/huggingface/hub
+      - ~/nltk_data:/root/nltk_data
+    environment:
+      - CLLM_SERVICES_PORT:10004
+      - TOG_SERVICE_PORT:10005
+      - OPENAI_API_KEY
+      - OPENAI_BASE_URL
+      - WEATHER_API_KEY
+      - HF_ENDPOINT
+      - CLIENT_ROOT:./client_resources
+      - SERVER_ROOT:./server_resources
+      - NVIDIA_VISIBLE_DEVICES:2
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['3', '4']
+              capabilities: [gpu]
+    entrypoint: "python"
+    command:
+      - "-m"
+      - "cllm.app.gradio"
+      - "--controller"
+      - "cllm.agents.tog.Controller"
+      - "--server-port"
+      - "10024"
