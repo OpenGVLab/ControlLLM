@@ -13,7 +13,7 @@ from cllm.agents.base import DataType, NON_FILE_TYPES
 
 from cllm.agents.tog.interpretor import Interpretor
 from cllm.agents.tog.planner import Planner
-from cllm.agents.tog.responser import generate_response
+from cllm.agents.tog.responser2 import generate_response
 
 logger = logging.getLogger(__name__)
 
@@ -108,49 +108,19 @@ class Controller:
             ], "Internal Error"
 
     def _run(self, task: str, state: dict) -> Tuple[List, str]:
-        # logger.info(task)
-        # BUILTIN_PLANS.update(load_builtin_plans("builtin_plan.json"))
-        # logger.info(BUILTIN_PLANS)
-        # resource_memory = state.get("resources", OrderedDict())
-        # history_msgs = state.get("history_msgs", [])
-        # plan = None
-
-        # shortcut for builtin plan
-        # for trigger_prompt, builtin_plan in BUILTIN_PLANS.items():
-        #     if task == trigger_prompt:
-        #         plan = builtin_plan
-        #         plan = self._fill_args(plan, resource_memory)
         state["request"] = task
         _, plan = self.plan(task, state)
         logger.info(plan)
         executed_plan = self.execute(plan, state)
 
         state["outputs"] = []
-        # executed_plan = self.interpretor.interpret(solution, history_msgs)
         executed_plan = list(executed_plan)
         for result_per_step, executed_solutions, wrapped_outputs in executed_plan:
-            # tool_name = json.dumps(result_per_step[0], ensure_ascii=False)
-            # args = json.dumps(result_per_step[1], ensure_ascii=False)
-            # ret = json.dumps(result_per_step[2], ensure_ascii=False)
-            # history, _ = self.add_text(
-            #     history,
-            #     f"Call **{tool_name}:**<br>&nbsp;&nbsp;&nbsp;&nbsp;**Args**: {plain2md(args)}<br>&nbsp;&nbsp;&nbsp;&nbsp;**Ret**: {plain2md(ret)}",
-            #     role="assistant",
-            # )
-            # user_state["history_msgs"] = history
             state["executed_solutions"] = executed_solutions
-            # yield user_state, input_image, history, history_plan
             for _, output in enumerate(wrapped_outputs):
                 if output is None or output.value is None:
                     continue
                 state["outputs"].extend(wrapped_outputs)
-                # state["history_msgs"] = history
-                # yield user_state, input_image, history, histor÷y_plan
-
-        # logger.info(output_files)
-        # for o in output_files:
-        #     if isinstance(o, container.File):
-        #         resource_memory[o.filename] = str(o.rtype)
 
         outputs = self.reply(state["executed_solutions"], state["outputs"], state)
 
@@ -181,7 +151,7 @@ if __name__ == "__main__":
         "history_msgs": [],
     }
     outputs, executed_plan = controller.run(task, state)
-    print(outputs)
+    print(outputs[0])
     print("*" * 40)
     print(executed_plan)
     print("Done!")
