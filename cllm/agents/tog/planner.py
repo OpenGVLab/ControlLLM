@@ -73,6 +73,7 @@ class Planner:
         resource_list = {k: v.split(".")[-1] for k, v in memory.items()}
         request = f"Resource list: {resource_list}\n{request}"
         logger.info(f"Input: {request}")
+        # print(f"Input: {request}")
         return request
 
     def solve_streaming(self, request: str, memory: dict = OrderedDict()):
@@ -88,10 +89,9 @@ class Planner:
             yield solutions
 
     def solve(self, request: str, memory: dict = OrderedDict()) -> List:
-        self.wrap_request(request, memory)
+        request = self.wrap_request(request, memory)
         sub_tasks = self.decomposer(request)
         solutions = self.tog(request, sub_tasks)
-        print(f"solutions: {solutions}")
         return sub_tasks, solutions
 
     def plan(self, task, memory: dict = OrderedDict()) -> List:
