@@ -1,0 +1,794 @@
+{
+    "image_detection": [
+        {
+            "type": "image_detection",
+            "instruction": "Detect if boat is present in the resources/8b5552_None_input_image.png file?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/8b5552_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of boat from detection results; 3. Draw bounding boxes on image to highlight the boat.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/8b5552_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"boat\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Can you detect the bench in image_386.png and highlight it?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in image_386.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of bench from detection results; 3. Draw bounding boxes on image to highlight the bench.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_386.png\"}, {\"type\": \"text\", \"value\": \"bench\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "I'm trying to find the umbrella in resources/615553_None_input_image.png, can you assist me?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/615553_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of umbrella from detection results; 3. Draw bounding boxes on image to highlight the umbrella.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/615553_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Can you determine if the image file z1xdEwb6J.png contains a baseball glove?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in z1xdEwb6J.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of baseball glove from detection results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"z1xdEwb6J.png\"}, {\"type\": \"text\", \"value\": \"baseball glove\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-0 on the z1xdEwb6J.png to highlight the baseball glove.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"z1xdEwb6J.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Point out the location of the tie in the resources/7d0200_3d7200_NormalText2Image_image.png file.",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/7d0200_3d7200_NormalText2Image_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of tie from detection results; 3. Draw bounding boxes on image to highlight the tie.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/7d0200_3d7200_NormalText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"tie\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Can you detect the cell phone in image_538.png and highlight it?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in image_538.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of cell phone from detection results; 3. Draw bounding boxes on image to highlight the cell phone.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_538.png\"}, {\"type\": \"text\", \"value\": \"cell phone\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "I need to check if there is a sheep in the image file named resources/7eb945_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/7eb945_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of sheep from detection results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/7eb945_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"sheep\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-0 on the resources/7eb945_None_input_image.png to highlight the sheep.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/7eb945_None_input_image.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Can you add a border around the refrigerator in resources/1c4017_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/1c4017_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of refrigerator from detection results; 3. Draw bounding boxes on image to highlight the refrigerator.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/1c4017_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"refrigerator\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Please check if airplane is present in the image file named resources/850915_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/850915_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of airplane from detection results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/850915_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"airplane\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-0 on the resources/850915_None_input_image.png to highlight the airplane.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/850915_None_input_image.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_detection",
+            "instruction": "Can you locate the zebra in resources/0c5511_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/0c5511_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of zebra from detection results; 3. Draw bounding boxes on image to highlight the zebra.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/0c5511_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"zebra\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "video_classification": [
+        {
+            "type": "video_classification",
+            "instruction": "Can you tell me if there are any brushing teeth actions in the bjfPIFVaw2ziLyj.mp4 video?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video bjfPIFVaw2ziLyj.mp4 by using the `video_classification` tool. 2. Select the category of \\\"brushing teeth\\\" from the video recognition results and judge whether the action \\\"brushing teeth\\\" exists in the video bjfPIFVaw2ziLyj.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"bjfPIFVaw2ziLyj.mp4\"}, {\"type\": \"text\", \"value\": \"brushing teeth\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Can you determine if the action in video_699.mp4 is classified as picking fruit?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video video_699.mp4 by using the `video_classification` tool. 2. Select the category of \\\"picking fruit\\\" from the video recognition results and judge whether the action \\\"picking fruit\\\" exists in the video video_699.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"video_699.mp4\"}, {\"type\": \"text\", \"value\": \"picking fruit\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Could you please identify if there are any playing guitar activities in the video resources/ead878_751878_Image2Video_video.mp4?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/ead878_751878_Image2Video_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"playing guitar\\\" from the video recognition results and judge whether the action \\\"playing guitar\\\" exists in the video resources/ead878_751878_Image2Video_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/ead878_751878_Image2Video_video.mp4\"}, {\"type\": \"text\", \"value\": \"playing guitar\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Could you kindly provide a summary of the man's actions in the video resources/080034_4d0034_VideoCutting_video.mp4?",
+            "output": "<Solution>[{\"description\": \"Recognize all actions in the video resources/080034_4d0034_VideoCutting_video.mp4 by using the `video_classification` tool and return the video recognition result.\", \"task\": \"video-perception\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/080034_4d0034_VideoCutting_video.mp4\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Is the action high jump in resources/3d1629_None_input_video.mp4",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/3d1629_None_input_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"high jump\\\" from the video recognition results and judge whether the action \\\"high jump\\\" exists in the video resources/3d1629_None_input_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/3d1629_None_input_video.mp4\"}, {\"type\": \"text\", \"value\": \"high jump\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Can you recognize any playing harmonica forms in the resources/509690_168690_Image2Video_video.mp4?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/509690_168690_Image2Video_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"playing harmonica\\\" from the video recognition results and judge whether the action \\\"playing harmonica\\\" exists in the video resources/509690_168690_Image2Video_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/509690_168690_Image2Video_video.mp4\"}, {\"type\": \"text\", \"value\": \"playing harmonica\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "I'm really interested in finding out if there are any gargling actions in the video 8zsHx2WbrbuEz.mp4",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video 8zsHx2WbrbuEz.mp4 by using the `video_classification` tool. 2. Select the category of \\\"gargling\\\" from the video recognition results and judge whether the action \\\"gargling\\\" exists in the video 8zsHx2WbrbuEz.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"8zsHx2WbrbuEz.mp4\"}, {\"type\": \"text\", \"value\": \"gargling\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Can you check for any tango dancing movements in the video resources/f85776_None_input_video.mp4?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/f85776_None_input_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"tango dancing\\\" from the video recognition results and judge whether the action \\\"tango dancing\\\" exists in the video resources/f85776_None_input_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/f85776_None_input_video.mp4\"}, {\"type\": \"text\", \"value\": \"tango dancing\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Can you identify if there is any snorkeling practice happening in the video named resources/986536_None_input_video.mp4?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/986536_None_input_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"snorkeling\\\" from the video recognition results and judge whether the action \\\"snorkeling\\\" exists in the video resources/986536_None_input_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/986536_None_input_video.mp4\"}, {\"type\": \"text\", \"value\": \"snorkeling\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "video_classification",
+            "instruction": "Is there any bending metal activity happening in resources/603509_8ab509_Image2Video_video.mp4? Please let me know.",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/603509_8ab509_Image2Video_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"bending metal\\\" from the video recognition results and judge whether the action \\\"bending metal\\\" exists in the video resources/603509_8ab509_Image2Video_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/603509_8ab509_Image2Video_video.mp4\"}, {\"type\": \"text\", \"value\": \"bending metal\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "image_QA": [
+        {
+            "type": "image_QA",
+            "instruction": "Describe the following picture resources/abb787_None_input_image.png.",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/abb787_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/abb787_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Describe the following image.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "what possible reasons might a person have for taking this image 7UMszi7.png?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: 7UMszi7.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"7UMszi7.png\"}, {\"type\": \"text\", \"value\": \"what possible reasons might a person have for taking this photograph?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "Given the image resources/1b2754_None_input_image.png, What is unique about the window in the room?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/1b2754_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/1b2754_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"What is unique about the window in the room?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "As for the resources/6c7111_None_input_image.png, What color is the bear in the image?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/6c7111_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/6c7111_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"What color is the bear in the image?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "with resources/276551_None_input_image.png, what problems might the people in the city be facing during this rainy day?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/276551_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/276551_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"What problems might the people in the city be facing during this rainy day?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "As for the image resources/567099_None_input_image.png, can you list the items that are on the wooden surface?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/567099_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/567099_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"can you list the items that are on the wooden surface?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "How does the room cater to the relaxation and comfort of its occupants in resources/669069_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/669069_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/669069_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"How does the room cater to the relaxation and comfort of its occupants?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "For resources/4c6541_00e541_ScribbleText2Image_image.png, what considerations should be made for guests attending this event with such a variety of food available?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/4c6541_00e541_ScribbleText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/4c6541_00e541_ScribbleText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"What considerations should be made for guests attending this event with such a variety of food available?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "Explain the visual content of the resources/837671_None_input_image.png in great detail.",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/837671_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/837671_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Explain the visual content of the image in great detail.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_QA",
+            "instruction": "Given the resources/77f666_None_input_image.png, what are the man and woman doing with the elephant in the river?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/77f666_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/77f666_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"what are the man and woman doing with the elephant in the river?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "image_generation": [
+        {
+            "type": "image_generation",
+            "instruction": "Would it be possible for you to create a new image using the line map from resources/b4e249_None_input_image.png? The new image should be a beautiful beach with a bright sun and crystal clear water.",
+            "output": "<Solution>[{\"description\": \"Generate the line result from resources/b4e249_None_input_image.png by using tool `image_to_line` and return the line result result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/b4e249_None_input_image.png\"}], \"returns\": [{\"type\": \"line\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on provided line result <GENERATED>-0 and text prompt by using `line_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"line\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image should be a beautiful beach with a bright sun and crystal clear water.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "Create a new image conditioned on the normal result from bVtlwXbK.png and the new image contains a forest with a campfire, a tent, and a group of friends.",
+            "output": "<Solution>[{\"description\": \"Generate the normal result from bVtlwXbK.png by using tool `image_to_normal` and return the normal result result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"bVtlwXbK.png\"}], \"returns\": [{\"type\": \"normal\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on provided normal result <GENERATED>-0 and text prompt by using `normal_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"normal\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image contains a forest with a campfire, a tent, and a group of friends.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "Can you please generate a new image conditioned on the scribble file from resources/996396_None_input_image.png and the new image contains a lake, a boat, and a couple having a romantic dinner on the boat?",
+            "output": "<Solution>[{\"description\": \"Generate the scribble map from resources/996396_None_input_image.png by using tool `image_to_scribble` and return the scribble map result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/996396_None_input_image.png\"}], \"returns\": [{\"type\": \"scribble\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on provided scribble map <GENERATED>-0 and text prompt by using `scribble_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"scribble\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image contains a lake, a boat, and a couple having a romantic dinner on the boat.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "With the edge map resources/78b135_image_613_Image2Edge_edge.png, generate a new image that features a forest with tall trees, a deer, and a river flowing through.",
+            "output": "<Solution>[{\"description\": \"Generate a new image conditioned on provided edge file resources/78b135_image_613_Image2Edge_edge.png and text prompt by using `edge_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"edge\", \"value\": \"resources/78b135_image_613_Image2Edge_edge.png\"}, {\"type\": \"text\", \"value\": \"The new image features a forest with tall trees, a deer, and a river flowing through.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "With the HED result resources/030945_image_72_Image2HED_HED.png, generate a new image that features a space landscape with planets, stars, and a couple in a spaceship.",
+            "output": "<Solution>[{\"description\": \"Generate a new image conditioned on provided hed input resources/030945_image_72_Image2HED_HED.png and text prompt by using `hed_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"hed\", \"value\": \"resources/030945_image_72_Image2HED_HED.png\"}, {\"type\": \"text\", \"value\": \"The new image features a space landscape with planets, stars, and a couple in a spaceship.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "With the segmentation resources/2c2793_b72793_SegmentAnything_segmentation.png, generate a new image that depicts a cozy winter scene with a snowman, a sled, a cabin, and a family of deer grazing nearby.",
+            "output": "<Solution>[{\"description\": \"Generate a new image conditioned on provided segmentation map and input text prompt by using `segmentation_text_to_image` tool. The text prompt provided by user describes the details of generated image. Then, return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"segmentation\", \"value\": \"resources/2c2793_b72793_SegmentAnything_segmentation.png\"}, {\"type\": \"text\", \"value\": \"The new image depicts a cozy winter scene with a snowman, a sled, a cabin, and a family of deer grazing nearby.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "Can you generate a new image that has a similar layout to the file named 'resources/d0f519_None_input_image.png'? I'm particularly interested in the positioning of the elements. The new image should have the same arrangement of elements and their positioning.",
+            "output": "<Solution>[{\"description\": \"Image generation: Can you generate a new image that has a similar layout to the file named 'resources/d0f519_None_input_image.png'? I'm particularly interested in the positioning of the elements. The new image should have the same arrangement of elements and their positioning.\", \"task\": [\"image-generation\", \"image-perception\", \"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/d0f519_None_input_image.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "Generate a new image conditioned on the segmentation from resources/e62633_634633_SegText2Image_image.png and the new image contains a majestic mountain range with a clear blue sky and a herd of wild horses running free.",
+            "output": "<Solution>[{\"description\": \"generate the segmentation map for resources/e62633_634633_SegText2Image_image.png by using tool\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e62633_634633_SegText2Image_image.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on generated segmentation map <GENERATED>-0 and input text prompt by using `segmentation_text_to_image` tool. The text prompt provided by user describes the details of generated image. Then, return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image contains a majestic mountain range with a clear blue sky and a herd of wild horses running free.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "With the HED result resources/3de328_9ff328_Image2HED_HED.png, generate a new image that features a zoo landscape with various animals, a couple with their children, and a fountain.",
+            "output": "<Solution>[{\"description\": \"Generate a new image conditioned on provided hed input resources/3de328_9ff328_Image2HED_HED.png and text prompt by using `hed_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"hed\", \"value\": \"resources/3de328_9ff328_Image2HED_HED.png\"}, {\"type\": \"text\", \"value\": \"The new image features a zoo landscape with various animals, a couple with their children, and a fountain.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "With the depth map resources/e66282_60b282_Image2Depth_depth.png, generate a new image that showcases a beach with palm trees, a couple lounging in chairs, and a sailboat in the distance.",
+            "output": "<Solution>[{\"description\": \"Generate a new image conditioned on provided depth map resources/e66282_60b282_Image2Depth_depth.png and text prompt by using `depth_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"depth\", \"value\": \"resources/e66282_60b282_Image2Depth_depth.png\"}, {\"type\": \"text\", \"value\": \"The new image showcases a beach with palm trees, a couple lounging in chairs, and a sailboat in the distance.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "image_editing": [
+        {
+            "type": "image_editing",
+            "instruction": "Crop out the baseball glove in resources/37d606_fc7606_ScribbleText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in resources/37d606_fc7606_ScribbleText2Image_image.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of baseball glove from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/37d606_fc7606_ScribbleText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"baseball glove\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Separate all target objects from resources/37d606_fc7606_ScribbleText2Image_image.png using the obtained masks <GENERATED>-0. Then, return all images that only contain the target objects.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/37d606_fc7606_ScribbleText2Image_image.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Remove the tennis racket from the designated area of resources/953163_None_input_image.png according to the resources/d08163_953163_ImageSegmentationByMask_mask.png",
+            "output": "<Solution>[{\"description\": \"With the input resources/d08163_953163_ImageSegmentationByMask_mask.png, remove the regions of interest in resources/953163_None_input_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/953163_None_input_image.png\"}, {\"type\": \"mask\", \"value\": \"resources/d08163_953163_ImageSegmentationByMask_mask.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Take away the umbrella from the picture image_677.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in image_677.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of umbrella from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_677.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"With the obtained masks of umbrella, remove the regions of interest in image_677.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"image_677.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Can you delete the suitcase from the specified area of resources/6ee417_None_input_image.png based on the resources/17a417_6ee417_8bf457_mask.png?",
+            "output": "<Solution>[{\"description\": \"With the input resources/17a417_6ee417_8bf457_mask.png, remove the regions of interest in resources/6ee417_None_input_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/6ee417_None_input_image.png\"}, {\"type\": \"mask\", \"value\": \"resources/17a417_6ee417_8bf457_mask.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Can you delete the cat in the given area of resources/a17490_c54490_ScribbleText2Image_image.png based on the resources/3d7490_a17490_564b8d_mask.png?",
+            "output": "<Solution>[{\"description\": \"With the input resources/3d7490_a17490_564b8d_mask.png, remove the regions of interest in resources/a17490_c54490_ScribbleText2Image_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/a17490_c54490_ScribbleText2Image_image.png\"}, {\"type\": \"mask\", \"value\": \"resources/3d7490_a17490_564b8d_mask.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Eliminate the airplane from the resources/8c5494_None_input_image.png picture",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in resources/8c5494_None_input_image.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of airplane from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/8c5494_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"airplane\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"With the obtained masks of airplane, remove the regions of interest in resources/8c5494_None_input_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/8c5494_None_input_image.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Eliminate everything except the fire hydrant in resources/8da623_c2e623_LineText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in resources/8da623_c2e623_LineText2Image_image.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of fire hydrant from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/8da623_c2e623_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"fire hydrant\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Separate all target objects from resources/8da623_c2e623_LineText2Image_image.png using the obtained masks <GENERATED>-0. Then, return all images that only contain the target objects.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/8da623_c2e623_LineText2Image_image.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Can you erase the cell phone in the file Mkxip2D.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in Mkxip2D.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of cell phone from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"Mkxip2D.png\"}, {\"type\": \"text\", \"value\": \"cell phone\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"With the obtained masks of cell phone, remove the regions of interest in Mkxip2D.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"Mkxip2D.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Can you get rid of the suitcase in the specified section of resources/c44496_None_input_image.png using the resources/d52496_c44496_ImageSegmentationByMask_mask.png?",
+            "output": "<Solution>[{\"description\": \"With the input resources/d52496_c44496_ImageSegmentationByMask_mask.png, remove the regions of interest in resources/c44496_None_input_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/c44496_None_input_image.png\"}, {\"type\": \"mask\", \"value\": \"resources/d52496_c44496_ImageSegmentationByMask_mask.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_editing",
+            "instruction": "Can you get rid of the dog in the file image_883.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in image_883.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of dog from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_883.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"With the obtained masks of dog, remove the regions of interest in image_883.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"image_883.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        }
+    ],
+    "image_classification": [
+        {
+            "type": "image_classification",
+            "instruction": "Please determine if the image file resources/96f182_3b6182_HEDText2Image_image.png contains a platyhelminth?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/96f182_3b6182_HEDText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of platyhelminth from the recognized categories and judge whether platyhelminth exists in the image resources/96f182_3b6182_HEDText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/96f182_3b6182_HEDText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"platyhelminth\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "I need to verify if there is a capuchin in the image file resources/de9165_40a165_CannyText2Image_image.png, can you assist?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/de9165_40a165_CannyText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of capuchin from the recognized categories and judge whether capuchin exists in the image resources/de9165_40a165_CannyText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/de9165_40a165_CannyText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"capuchin\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "What other items are visible in resources/496233_fbf233_EdgeText2Image_image.png, in addition to the redbone?",
+            "output": "<Solution>[{\"description\": \"Recognize all objects in the resources/496233_fbf233_EdgeText2Image_image.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/496233_fbf233_EdgeText2Image_image.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "What are the different items in resources/b43187_4c6187_DepthText2Image_image.png, including the plane?",
+            "output": "<Solution>[{\"description\": \"Recognize all objects in the resources/b43187_4c6187_DepthText2Image_image.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/b43187_4c6187_DepthText2Image_image.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "I want to know if there is a baseball in the image file resources/db1372_f8e372_DepthText2Image_image.png, can you help?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/db1372_f8e372_DepthText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of baseball from the recognized categories and judge whether baseball exists in the image resources/db1372_f8e372_DepthText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/db1372_f8e372_DepthText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"baseball\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "Please determine if the image file resources/cf8181_78c181_SegText2Image_image.png contains a mop?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/cf8181_78c181_SegText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of mop from the recognized categories and judge whether mop exists in the image resources/cf8181_78c181_SegText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/cf8181_78c181_SegText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"mop\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "Is there a holothurian present in the image_587.png file?",
+            "output": "<Solution>[{\"description\": \"Recognize all objects in the image_587.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_587.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "Can you recognize all the objects in the resources/6d9918_144918_CannyText2Image_image.png?",
+            "output": "<Solution>[{\"description\": \"Recognize all objects in the resources/6d9918_144918_CannyText2Image_image.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/6d9918_144918_CannyText2Image_image.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "Please determine if there is a dog in the image file resources/2ac425_84e425_DepthText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/2ac425_84e425_DepthText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of tv from the recognized categories and judge whether tv exists in the image resources/2ac425_84e425_DepthText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/2ac425_84e425_DepthText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_classification",
+            "instruction": "Please determine if the image file resources/e08178_6b9178_LineText2Image_image.png contains a salt shaker?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/e08178_6b9178_LineText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of salt shaker from the recognized categories and judge whether salt shaker exists in the image resources/e08178_6b9178_LineText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e08178_6b9178_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"salt shaker\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "QA": [
+        {
+            "type": "QA",
+            "instruction": "Create an HTML page that tells a story about a cat obsessed with astronomy. You can use images and text to make the story engaging and visually appealing. \\nHere is a possible storyline:\\nMeet Luna, a curious cat with a passion for the stars. She spends every night gazing up at the sky, mesmerized by the twinkling lights. One evening, Luna decides to take her fascination to the next level and sets off on a journey to explore the universe.\\nShe starts by researching constellations on her owner's laptop, scrolling through pages of star charts and diagrams. Luna discovers that her favorite constellation is Orion, the mighty hunter, with its distinctive three-star belt.\\nEager to see Orion up close, Luna builds a cardboard telescope using a tutorial she found on YouTube. She spends hours adjusting the lenses and calibrating the focus, determined to get the clearest view possible.\\nFinally, the moment arrives. Luna peeks through the eyepiece of her makeshift telescope and gasps in wonder. She can see Orion's belt in stunning detail, along with dozens of other stars and galaxies she never knew existed.\\nFrom that night on, Luna becomes a regular stargazer, documenting her observations in a hand-drawn journal. She even starts attending astronomy club meetings at the local library, where she shares her newfound knowledge with fellow space enthusiasts.\\nIn the end, Luna discovers that her passion for astronomy has led her on a journey of self-discovery and curiosity. She realizes that there is always more to learn and explore, both in the vast universe and within herself.",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"Create an HTML page that tells a story about a cat obsessed with astronomy. You can use images and text to make the story engaging and visually appealing. \\nHere is a possible storyline:\\nMeet Luna, a curious cat with a passion for the stars. She spends every night gazing up at the sky, mesmerized by the twinkling lights. One evening, Luna decides to take her fascination to the next level and sets off on a journey to explore the universe.\\nShe starts by researching constellations on her owner's laptop, scrolling through pages of star charts and diagrams. Luna discovers that her favorite constellation is Orion, the mighty hunter, with its distinctive three-star belt.\\nEager to see Orion up close, Luna builds a cardboard telescope using a tutorial she found on YouTube. She spends hours adjusting the lenses and calibrating the focus, determined to get the clearest view possible.\\nFinally, the moment arrives. Luna peeks through the eyepiece of her makeshift telescope and gasps in wonder. She can see Orion's belt in stunning detail, along with dozens of other stars and galaxies she never knew existed.\\nFrom that night on, Luna becomes a regular stargazer, documenting her observations in a hand-drawn journal. She even starts attending astronomy club meetings at the local library, where she shares her newfound knowledge with fellow space enthusiasts.\\nIn the end, Luna discovers that her passion for astronomy has led her on a journey of self-discovery and curiosity. She realizes that there is always more to learn and explore, both in the vast universe and within herself.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "Create a data structure to represent a grocery store checkout system.",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"Create a data structure to represent a grocery store checkout system.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "Explain the importance of gender equality in the workplace.",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"Explain the importance of gender equality in the workplace.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "How can I use Python to analyze a sound wave recorded at a depth of 1000 meters with a sampling frequency of 44.1 kHz and a duration of 10 seconds? Here is the code to read and plot the sound wave in Python:\\nimport matplotlib.pyplot as plt\\nfrom scipy.io import wavfile\\nsampling_freq, audio = wavfile.read('ocean_sound.wav')\\ntime = [i / sampling_freq for i in range(audio.shape[0])]\\nplt.plot(time, audio)\\nplt.xlabel('Time (s)')\\nplt.ylabel('Amplitude')\\nplt.title('Sound Wave of the Ocean')\\nplt.show()\\nNow, how can I compute and plot the frequency spectrum of the sound wave using Fourier transform in Python?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"How can I use Python to analyze a sound wave recorded at a depth of 1000 meters with a sampling frequency of 44.1 kHz and a duration of 10 seconds? Here is the code to read and plot the sound wave in Python:\\nimport matplotlib.pyplot as plt\\nfrom scipy.io import wavfile\\nsampling_freq, audio = wavfile.read('ocean_sound.wav')\\ntime = [i / sampling_freq for i in range(audio.shape[0])]\\nplt.plot(time, audio)\\nplt.xlabel('Time (s)')\\nplt.ylabel('Amplitude')\\nplt.title('Sound Wave of the Ocean')\\nplt.show()\\nNow, how can I compute and plot the frequency spectrum of the sound wave using Fourier transform in Python?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "How many Time Zones can you find in the US?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"How many Time Zones can you find in the US?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "How can I design a sleep monitoring system in C# that can accurately detect a baby's specific sleep stages and predict when they will enter a light sleep stage within the next hour? And once this prediction is made, how can I alert the parent or caregiver that the baby will be waking up soon and suggest soothing methods to ease the transition from sleep to wakefulness? Also, how can I modify the statement \\\"The baby is sleeping\\\" to reflect this predictive system in C#?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"How can I design a sleep monitoring system in C# that can accurately detect a baby's specific sleep stages and predict when they will enter a light sleep stage within the next hour? And once this prediction is made, how can I alert the parent or caregiver that the baby will be waking up soon and suggest soothing methods to ease the transition from sleep to wakefulness? Also, how can I modify the statement \\\"The baby is sleeping\\\" to reflect this predictive system in C#?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "How can I use the shell command to translate a phrase into Spanish? Specifically, how can I use the 'translate-shell' command to translate the phrase \\\"never give up\\\" into Spanish?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"How can I use the shell command to translate a phrase into Spanish? Specifically, how can I use the 'translate-shell' command to translate the phrase \\\"never give up\\\" into Spanish?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "You are given a list of 10 sentences, each with a missing word. Your task is to fill in the blank with the correct word that completes the sentence in a grammatically correct manner. However, each sentence has a specific rule that must be followed when selecting the missing word. Your task is to identify and apply the correct rule for each sentence.\\n1. The ____ who is cooking dinner tonight is my sister. (select a possessive pronoun)\\n2. She has a lot of ____ at the beach. (select a plural noun)\\n3. The ____ played beautifully at the concert last night. (select a singular noun)\\n4. Can you please pass me the ____ ? (select an uncountable noun)\\n5. The ____ is scheduled to arrive at 2 pm. (select a proper noun)\\n6. I have never seen such a ____ dress before. (select an adjective)\\n7. He bought a new ____ for his daughter's birthday. (select a countable noun)\\n8. The ____ of the earth is approximately 6,371 kilometers. (select a number)\\n9. We need to buy some ____ for the camping trip. (select a plural noun)\\n10. The ____ is very hot and humid today. (select a weather-related noun)",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"You are given a list of 10 sentences, each with a missing word. Your task is to fill in the blank with the correct word that completes the sentence in a grammatically correct manner. However, each sentence has a specific rule that must be followed when selecting the missing word. Your task is to identify and apply the correct rule for each sentence.\\n1. The ____ who is cooking dinner tonight is my sister. (select a possessive pronoun)\\n2. She has a lot of ____ at the beach. (select a plural noun)\\n3. The ____ played beautifully at the concert last night. (select a singular noun)\\n4. Can you please pass me the ____ ? (select an uncountable noun)\\n5. The ____ is scheduled to arrive at 2 pm. (select a proper noun)\\n6. I have never seen such a ____ dress before. (select an adjective)\\n7. He bought a new ____ for his daughter's birthday. (select a countable noun)\\n8. The ____ of the earth is approximately 6,371 kilometers. (select a number)\\n9. We need to buy some ____ for the camping trip. (select a plural noun)\\n10. The ____ is very hot and humid today. (select a weather-related noun)\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "Can you explain in detail how the GPT language model is able to distinguish between words that have similar meanings but are used differently in different contexts? Additionally, can you provide examples of how the model is able to disambiguate between these words and accurately predict the correct meaning in each context?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"Can you explain in detail how the GPT language model is able to distinguish between words that have similar meanings but are used differently in different contexts? Additionally, can you provide examples of how the model is able to disambiguate between these words and accurately predict the correct meaning in each context?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "QA",
+            "instruction": "Can you solve this language puzzle? Identify an adjective that would best fit the blank space in the following poem about happiness, and explain how it alters the tone of the poem. Additionally, can you recall any other notable pieces of literature that employ the phrase \\\"warm ______\\\" to evoke a particular emotion or sensation? Use your linguistic and literary skills to tackle this challenge!",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"Can you solve this language puzzle? Identify an adjective that would best fit the blank space in the following poem about happiness, and explain how it alters the tone of the poem. Additionally, can you recall any other notable pieces of literature that employ the phrase \\\"warm ______\\\" to evoke a particular emotion or sensation? Use your linguistic and literary skills to tackle this challenge!\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "image_segmentation": [
+        {
+            "type": "image_segmentation",
+            "instruction": "Segment the cell phone from image_395.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from image_395.png by using `image_instance_segmentation` tool and return all segmented masks with label information in image_395.png; 2. Select target masks of cell phone from all segmentation masks and return the chosen masks of cell phone.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_395.png\"}, {\"type\": \"text\", \"value\": \"cell phone\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Can you provide me with a mask that isolates the dog in resources/ae9887_b1b887_ScribbleText2Image_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/ae9887_b1b887_ScribbleText2Image_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/ae9887_b1b887_ScribbleText2Image_image.png; 2. Select target masks of dog from all segmentation masks and return the chosen masks of dog.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/ae9887_b1b887_ScribbleText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Provide me with a mask that separates the bear from the rest of the resources/01f491_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/01f491_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/01f491_None_input_image.png; 2. Select target masks of bear from all segmentation masks and return the chosen masks of bear.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/01f491_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"bear\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Segment the objects in resources/7a8087_None_input_image.png without any label information",
+            "output": "<Solution>[{\"description\": \"Segment anything in resources/7a8087_None_input_image.png without label information by using `segment_anything` tool and return the segmentation map.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/7a8087_None_input_image.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "please return the segmentation map for resources/bbc148_None_input_image.png by segmenting all objects.",
+            "output": "<Solution>[{\"description\": \"Segment all objects from resources/bbc148_None_input_image.png by using `segment_anything` tool and return the segmentation map.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/bbc148_None_input_image.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "give me the mask of elephant in resources/a33409_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/a33409_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/a33409_None_input_image.png; 2. Select target masks of elephant from all segmentation masks and return the chosen masks of elephant.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/a33409_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"elephant\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Provide me with a mask that isolates the umbrella in resources/004464_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/004464_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/004464_None_input_image.png; 2. Select target masks of umbrella from all segmentation masks and return the chosen masks of umbrella.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/004464_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Can you generate a sandwich segmentation mask for resources/48b945_None_input_image.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/48b945_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/48b945_None_input_image.png; 2. Select target masks of sandwich from all segmentation masks and return the chosen masks of sandwich.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/48b945_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"sandwich\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Can you generate a segmentation mask that isolates the truck in Q83jGc0TDME.png?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from Q83jGc0TDME.png by using `image_instance_segmentation` tool and return all segmented masks with label information in Q83jGc0TDME.png; 2. Select target masks of truck from all segmentation masks and return the chosen masks of truck.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"Q83jGc0TDME.png\"}, {\"type\": \"text\", \"value\": \"truck\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_segmentation",
+            "instruction": "Is it possible to use your segmentation tool to segment anything in 'afwIRnnSvh.png' without label information?",
+            "output": "<Solution>[{\"description\": \"Segment anything in afwIRnnSvh.png without label information by using `segment_anything` tool and return the segmentation map.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"afwIRnnSvh.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "image_processing": [
+        {
+            "type": "image_processing",
+            "instruction": "Process the input image resources/8db876_None_input_image.png using the pose algorithm",
+            "output": "<Solution>[{\"description\": \"Process the resources/8db876_None_input_image.png to obtain pose result by using `image_to_pose` tool.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/8db876_None_input_image.png\"}], \"returns\": [{\"type\": \"pose\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Execute the edge model on the image resources/316863_def863_EdgeText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"Process the resources/316863_def863_EdgeText2Image_image.png to obtain edge map by using `image_to_edge` tool.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/316863_def863_EdgeText2Image_image.png\"}], \"returns\": [{\"type\": \"edge\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "I require the depth map for the image at resources/fb6847_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"Extract the depth map for resources/fb6847_None_input_image.png by using `image_to_depth` tool and return the depth map.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/fb6847_None_input_image.png\"}], \"returns\": [{\"type\": \"depth\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Can you provide me with the HED map for the image located in resources/646841_010841_EdgeText2Image_image.png?",
+            "output": "<Solution>[{\"description\": \"Extract the HED map for resources/646841_010841_EdgeText2Image_image.png by using `image_to_hed` tool and return the HED map.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/646841_010841_EdgeText2Image_image.png\"}], \"returns\": [{\"type\": \"hed\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Can you provide me with the depth output for the image_289.png?",
+            "output": "<Solution>[{\"description\": \"Extract the depth output for image_289.png by using `image_to_depth` tool and return the depth output.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_289.png\"}], \"returns\": [{\"type\": \"depth\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Can you provide me with the pose map for the image resources/adf841_43b841_SegText2Image_image.png?",
+            "output": "<Solution>[{\"description\": \"Extract the pose map for resources/adf841_43b841_SegText2Image_image.png by using `image_to_pose` tool and return the pose map.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/adf841_43b841_SegText2Image_image.png\"}], \"returns\": [{\"type\": \"pose\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Fetch the line map for resources/fb9832_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"Extract the line map for resources/fb9832_None_input_image.png by using `image_to_line` tool and return the line map.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/fb9832_None_input_image.png\"}], \"returns\": [{\"type\": \"line\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Please extract the scribble result for the image in resources/466842_85f842_EdgeText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"Extract the scribble result for resources/466842_85f842_EdgeText2Image_image.png by using `image_to_scribble` tool and return the scribble result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/466842_85f842_EdgeText2Image_image.png\"}], \"returns\": [{\"type\": \"scribble\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Run the line algorithm on resources/e71868_66f868_EdgeText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"Process the resources/e71868_66f868_EdgeText2Image_image.png to obtain line result by using `image_to_line` tool.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e71868_66f868_EdgeText2Image_image.png\"}], \"returns\": [{\"type\": \"line\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        },
+        {
+            "type": "image_processing",
+            "instruction": "Give me the normal result for resources/ca1831_f5f831_normalText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"Extract the normal result for resources/ca1831_f5f831_normalText2Image_image.png by using `image_to_normal` tool and return the normal result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/ca1831_f5f831_normalText2Image_image.png\"}], \"returns\": [{\"type\": \"normal\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "easy"
+        }
+    ],
+    "count_object": [
+        {
+            "type": "count_object",
+            "instruction": "inform me about the total count of dogs in the image_623.png",
+            "output": "<Solution>[{\"description\": \"Count the number of mice in image_623.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_623.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: inform me about the total count of mice in the image_623.pnginform me about the total count of mice in the image_623.png\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_623.png\"}, {\"type\": \"text\", \"value\": \"inform me about the total count of dogs in the image_623.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Determine the number of cats in the image file named image_611.png",
+            "output": "<Solution>[{\"description\": \"Count the number of cats in image_611.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_611.png\"}, {\"type\": \"text\", \"value\": \"cat\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Determine the number of cats in the image file named image_611.pngDetermine the number of cats in the image file named image_611.png\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_611.png\"}, {\"type\": \"text\", \"value\": \"Determine the number of cats in the image file named image_611.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "What is the total number of cars in the image_86.png image?",
+            "output": "<Solution>[{\"description\": \"Count the number of cars in image_86.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_86.png\"}, {\"type\": \"text\", \"value\": \"car\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: What is the total number of cars in the image_86.png image?What is the total number of cars in the image_86.png image?\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_86.png\"}, {\"type\": \"text\", \"value\": \"What is the total number of cars in the image_86.png image?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Approximate the quantity of motorcycles in the resources/eaf385_None_input_image.png file",
+            "output": "<Solution>[{\"description\": \"Count the number of motorcycles in resources/eaf385_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/eaf385_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"motorcycle\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Approximate the quantity of motorcycles in the resources/eaf385_None_input_image.png fileApproximate the quantity of motorcycles in the resources/eaf385_None_input_image.png file\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/eaf385_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Approximate the quantity of motorcycles in the resources/eaf385_None_input_image.png file\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Give me the total count of cows in the image named NrPkrd2b.png",
+            "output": "<Solution>[{\"description\": \"Count the number of kine in NrPkrd2b.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NrPkrd2b.png\"}, {\"type\": \"text\", \"value\": \"cow\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Give me the total count of cows in the image named NrPkrd2b.pngGive me the total count of cows in the image named NrPkrd2b.png\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NrPkrd2b.png\"}, {\"type\": \"text\", \"value\": \"Give me the total count of cows in the image named NrPkrd2b.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "I would like to know the quantity of bowls in the image named resources/468620_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"Count the number of bowls in resources/468620_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/468620_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"bowl\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: I would like to know the quantity of bowls in the image named resources/468620_None_input_image.pngI would like to know the quantity of bowls in the image named resources/468620_None_input_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/468620_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"I would like to know the quantity of bowls in the image named resources/468620_None_input_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Can you determine the number of chairs in the resources/206685_None_input_image.png image?",
+            "output": "<Solution>[{\"description\": \"Count the number of chairs in resources/206685_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/206685_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"chair\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Can you determine the number of chairs in the resources/206685_None_input_image.png image?Can you determine the number of chairs in the resources/206685_None_input_image.png image?\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/206685_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Can you determine the number of chairs in the resources/206685_None_input_image.png image?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Calculate the number of bottles in the resources/b1e588_None_input_image.png image",
+            "output": "<Solution>[{\"description\": \"Count the number of bottles in resources/b1e588_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/b1e588_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"bottle\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Calculate the number of bottles in the resources/b1e588_None_input_image.png imageCalculate the number of bottles in the resources/b1e588_None_input_image.png image\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/b1e588_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Calculate the number of bottles in the resources/b1e588_None_input_image.png image\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "find the total number of fire hydrants in the resources/4bc427_None_input_image.png file",
+            "output": "<Solution>[{\"description\": \"Count the number of fire hydrants in resources/4bc427_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/4bc427_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"fire hydrant\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: find the total number of fire hydrants in the resources/4bc427_None_input_image.png filefind the total number of fire hydrants in the resources/4bc427_None_input_image.png file\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/4bc427_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"find the total number of fire hydrants in the resources/4bc427_None_input_image.png file\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "count_object",
+            "instruction": "Ascertain the number of cell phones in the resources/5e0746_None_input_image.png file",
+            "output": "<Solution>[{\"description\": \"Count the number of cell phones in resources/5e0746_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/5e0746_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"cell phone\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: Ascertain the number of cell phones in the resources/5e0746_None_input_image.png fileAscertain the number of cell phones in the resources/5e0746_None_input_image.png file\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/5e0746_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Ascertain the number of cell phones in the resources/5e0746_None_input_image.png file\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        }
+    ],
+    "compound_instructions": [
+        {
+            "type": "parallel_count_object",
+            "instruction": "provide the number of umbrellas present in the resources/f11818_None_input_image.png, trssxmVv9Co1QTWzB.png, resources/cc0818_e0b818_SegText2Image_image.png resources/dfd818_None_input_image.png resources/051818_e22818_LineText2Image_image.png",
+            "output": "<Solution>[{\"description\": \"Count the number of umbrellas in resources/f11818_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/f11818_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: provide the number of umbrellas present in the resources/f11818_None_input_image.pngprovide the number of umbrellas present in the resources/f11818_None_input_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/f11818_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"provide the number of umbrellas present in the resources/f11818_None_input_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Count the number of umbrellas in trssxmVv9Co1QTWzB.png\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"trssxmVv9Co1QTWzB.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"Answer questions based on image: provide the number of umbrellas present in the trssxmVv9Co1QTWzB.pngprovide the number of umbrellas present in the trssxmVv9Co1QTWzB.png\", \"task\": [\"visual-question-answering\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"trssxmVv9Co1QTWzB.png\"}, {\"type\": \"text\", \"value\": \"provide the number of umbrellas present in the trssxmVv9Co1QTWzB.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"Count the number of umbrellas in resources/cc0818_e0b818_SegText2Image_image.png\", \"task\": [\"image-perception\"], \"id\": 4, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/cc0818_e0b818_SegText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-4\"}]}, {\"description\": \"Answer questions based on image: provide the number of umbrellas present in the resources/cc0818_e0b818_SegText2Image_image.pngprovide the number of umbrellas present in the resources/cc0818_e0b818_SegText2Image_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 5, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/cc0818_e0b818_SegText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"provide the number of umbrellas present in the resources/cc0818_e0b818_SegText2Image_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-5\"}]}, {\"description\": \"Count the number of umbrellas in resources/dfd818_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 6, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/dfd818_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-6\"}]}, {\"description\": \"Answer questions based on image: provide the number of umbrellas present in the resources/dfd818_None_input_image.pngprovide the number of umbrellas present in the resources/dfd818_None_input_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 7, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/dfd818_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"provide the number of umbrellas present in the resources/dfd818_None_input_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-7\"}]}, {\"description\": \"Count the number of umbrellas in resources/051818_e22818_LineText2Image_image.png\", \"task\": [\"image-perception\"], \"id\": 8, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/051818_e22818_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"umbrella\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-8\"}]}, {\"description\": \"Answer questions based on image: provide the number of umbrellas present in the resources/051818_e22818_LineText2Image_image.pngprovide the number of umbrellas present in the resources/051818_e22818_LineText2Image_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 9, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/051818_e22818_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"provide the number of umbrellas present in the resources/051818_e22818_LineText2Image_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-9\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_image_QA",
+            "instruction": "Can you elaborate on the elements of the images image_15.png,resources/177823_None_input_image.png and y0hD1hal.png provided?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: image_15.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_15.png\"}, {\"type\": \"text\", \"value\": \"Can you elaborate on the elements of the picture provided?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: resources/177823_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/177823_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"Can you elaborate on the elements of the picture provided?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: y0hD1hal.png.\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"y0hD1hal.png\"}, {\"type\": \"text\", \"value\": \"Can you elaborate on the elements of the picture provided?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_image_editing",
+            "instruction": "Erase the laptop from the resources/14c826_None_input_image.png,image_219.png and image_236.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in resources/14c826_None_input_image.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of laptop from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/14c826_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"laptop\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"With the obtained masks of laptop, remove the regions of interest in resources/14c826_None_input_image.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/14c826_None_input_image.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Segment all objects in image_219.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of laptop from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_219.png\"}, {\"type\": \"text\", \"value\": \"laptop\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"With the obtained masks of laptop, remove the regions of interest in image_219.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 3, \"dep\": [2], \"args\": [{\"type\": \"image\", \"value\": \"image_219.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"1. Segment all objects in image_236.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of laptop from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 4, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_236.png\"}, {\"type\": \"text\", \"value\": \"laptop\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-4\"}]}, {\"description\": \"With the obtained masks of laptop, remove the regions of interest in image_236.png by using `image_inpainting` tool . Then, return the inpainted image.\", \"task\": [\"image-editing\"], \"id\": 5, \"dep\": [4], \"args\": [{\"type\": \"image\", \"value\": \"image_236.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-5\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_image_segmentation",
+            "instruction": "Can you extract the mask of book from the resources/d6c827_None_input_image.png resources/43d827_34b827_CannyText2Image_image.png image_993.png, resources/bed827_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects from resources/d6c827_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/d6c827_None_input_image.png; 2. Select target masks of book from all segmentation masks and return the chosen masks of book.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/d6c827_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"book\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Segment all objects from resources/43d827_34b827_CannyText2Image_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/43d827_34b827_CannyText2Image_image.png; 2. Select target masks of book from all segmentation masks and return the chosen masks of book.\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/43d827_34b827_CannyText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"book\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Segment all objects from image_993.png by using `image_instance_segmentation` tool and return all segmented masks with label information in image_993.png; 2. Select target masks of book from all segmentation masks and return the chosen masks of book.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_993.png\"}, {\"type\": \"text\", \"value\": \"book\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Segment all objects from resources/bed827_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/bed827_None_input_image.png; 2. Select target masks of book from all segmentation masks and return the chosen masks of book.\", \"task\": [\"image-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/bed827_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"book\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-3\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_image_detection",
+            "instruction": "Please detect if there is a snowboard in the Lxtyw289qG2r9kngJSQ.png, resources/b34828_None_input_image.png image_474.png file?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in Lxtyw289qG2r9kngJSQ.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of snowboard from detection results; 3. Draw bounding boxes on image to highlight the snowboard.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"Lxtyw289qG2r9kngJSQ.png\"}, {\"type\": \"text\", \"value\": \"snowboard\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Detect all objects in resources/b34828_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of snowboard from detection results; 3. Draw bounding boxes on image to highlight the snowboard.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/b34828_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"snowboard\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Detect all objects in image_474.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of snowboard from detection results; 3. Draw bounding boxes on image to highlight the snowboard.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_474.png\"}, {\"type\": \"text\", \"value\": \"snowboard\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_image_classification",
+            "instruction": "Can you tell me if there are dog present in the images file HUfkm7SuJvF8ocy.png, resources/a31834_5be834_CannyText2Image_image.png image_226.png, resources/386834_None_input_image.png zC38yMTT54kYc1wB.png?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the HUfkm7SuJvF8ocy.png by using the `image_classification` tool and return recognized categories; 2. Select the class of dog from the recognized categories and judge whether dog exists in the image HUfkm7SuJvF8ocy.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"HUfkm7SuJvF8ocy.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Recognize all objects in the resources/a31834_5be834_CannyText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of dog from the recognized categories and judge whether dog exists in the image resources/a31834_5be834_CannyText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/a31834_5be834_CannyText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Recognize all objects in the image_226.png by using the `image_classification` tool and return recognized categories; 2. Select the class of dog from the recognized categories and judge whether dog exists in the image image_226.png.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_226.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Recognize all objects in the resources/386834_None_input_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of dog from the recognized categories and judge whether dog exists in the image resources/386834_None_input_image.png.\", \"task\": [\"image-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/386834_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"1. Recognize all objects in the zC38yMTT54kYc1wB.png by using the `image_classification` tool and return recognized categories; 2. Select the class of dog from the recognized categories and judge whether dog exists in the image zC38yMTT54kYc1wB.png.\", \"task\": [\"image-perception\"], \"id\": 4, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"zC38yMTT54kYc1wB.png\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-4\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "parallel_video_classification",
+            "instruction": "I'm wondering if there is any playing piano practice happening in the resources/580835_268835_VideoCutting_video.mp4 resources/468835_None_input_video.mp4,video_124.mp4?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all actions in the video resources/580835_268835_VideoCutting_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"playing piano\\\" from the video recognition results and judge whether the action \\\"playing piano\\\" exists in the video resources/580835_268835_VideoCutting_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/580835_268835_VideoCutting_video.mp4\"}, {\"type\": \"text\", \"value\": \"playing piano\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Recognize all actions in the video resources/468835_None_input_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"playing piano\\\" from the video recognition results and judge whether the action \\\"playing piano\\\" exists in the video resources/468835_None_input_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/468835_None_input_video.mp4\"}, {\"type\": \"text\", \"value\": \"playing piano\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Recognize all actions in the video video_124.mp4 by using the `video_classification` tool. 2. Select the category of \\\"playing piano\\\" from the video recognition results and judge whether the action \\\"playing piano\\\" exists in the video video_124.mp4.\", \"task\": [\"video-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"video_124.mp4\"}, {\"type\": \"text\", \"value\": \"playing piano\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard",
+            "status": "deprecated"
+
+        },
+        {
+            "type": "image_detection,image_classification,image_detection,image_QA",
+            "instruction": "Can you determine whether NUh2JHrRFzgqQeL2Sd.png contains a mouse? Please provide a list of all the objects present in the image, with a special emphasis on the killer. Is the image file NUh2JHrRFzgqQeL2Sd.png displaying a banana? As for the image, what skills are important for improving one's performance in the depicted scenario?",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in NUh2JHrRFzgqQeL2Sd.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of mouse from detection results.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}, {\"type\": \"text\", \"value\": \"mouse\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-0 on the NUh2JHrRFzgqQeL2Sd.png to highlight the mouse.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Recognize all objects in the NUh2JHrRFzgqQeL2Sd.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Detect all objects in NUh2JHrRFzgqQeL2Sd.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of banana from detection results.\", \"task\": [\"image-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}, {\"type\": \"text\", \"value\": \"banana\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-3 on the NUh2JHrRFzgqQeL2Sd.png to highlight the banana.\", \"task\": [\"image-editing\"], \"id\": 4, \"dep\": [3], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-3\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-4\"}]}, {\"description\": \"Answer questions based on image: NUh2JHrRFzgqQeL2Sd.png.\", \"task\": [\"visual-question-answering\"], \"id\": 5, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"NUh2JHrRFzgqQeL2Sd.png\"}, {\"type\": \"text\", \"value\": \"what skills are important for improving one's performance in the depicted scenario?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-5\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_classification,image_segmentation,image_QA",
+            "instruction": "Could you tell me if there is a gyromitra present in the image named resources/e4c357_6e8357_LineText2Image_image.png? I want to extract the sheep from this image, can you give me a mask? As for the image, What could be the significance of a sheep in the church setting?",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the resources/e4c357_6e8357_LineText2Image_image.png by using the `image_classification` tool and return recognized categories; 2. Select the class of gyromitra from the recognized categories and judge whether gyromitra exists in the image resources/e4c357_6e8357_LineText2Image_image.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e4c357_6e8357_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"gyromitra\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Segment all objects from resources/e4c357_6e8357_LineText2Image_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/e4c357_6e8357_LineText2Image_image.png; 2. Select target masks of sheep from all segmentation masks and return the chosen masks of sheep.\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e4c357_6e8357_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"sheep\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: resources/e4c357_6e8357_LineText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e4c357_6e8357_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"What could be the significance of a sheep in the church setting?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard",
+            "status": "deprecated"
+        },
+        {
+            "type": "image_generation,image_detection,image_QA",
+            "instruction": "Can you create a new image using image_634.png's edge and add a spaceship, an alien planet, and a shooting star in the sky? describe this new image.",
+            "output": "<Solution>[{\"description\": \"Generate the edge from image_634.png by using tool `image_to_edge` and return the edge result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_634.png\"}], \"returns\": [{\"type\": \"edge\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on provided edge <GENERATED>-0 and text prompt by using `edge_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"edge\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image should have a spaceship, an alien planet, and a shooting star in the sky.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: <GENERATED>-1.\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [1], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}, {\"type\": \"text\", \"value\": \"describe the image.\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_generation,image_classification",
+            "instruction": "Can you generate a new image using the normal map from resources/807402_None_input_image.png? The new image should be a peaceful countryside with a beautiful sunset and grazing cows. Please confirm if there is a canoe in the image?",
+            "output": "<Solution>[{\"description\": \"Generate the normal from resources/807402_None_input_image.png by using tool `image_to_normal` and return the normal result.\", \"task\": [\"image-processing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/807402_None_input_image.png\"}], \"returns\": [{\"type\": \"normal\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on provided normal <GENERATED>-0 and text prompt by using `normal_text_to_image` tool, then return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"normal\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image should be a peaceful countryside with a beautiful sunset and grazing cows.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Recognize all objects in the <GENERATED>-1 by using the `image_classification` tool and return recognized categories; 2. Select the class of canoe from the recognized categories and judge whether canoe exists in the image <GENERATED>-1.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [1], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}, {\"type\": \"text\", \"value\": \"canoe\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_classification,image_segmentation,image_detection",
+            "instruction": "Is the Blenheim spaniel present in the image file image_103.png? Give me the segmentation mask for the skis in this image. Please detect if there is a clock in the image",
+            "output": "<Solution>[{\"description\": \"1. Recognize all objects in the image_103.png by using the `image_classification` tool and return recognized categories; 2. Select the class of Blenheim spaniel from the recognized categories and judge whether Blenheim spaniel exists in the image image_103.png.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_103.png\"}, {\"type\": \"text\", \"value\": \"Blenheim spaniel\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Segment all objects from image_103.png by using `image_instance_segmentation` tool and return all segmented masks with label information in image_103.png; 2. Select target masks of skis from all segmentation masks and return the chosen masks of skis.\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_103.png\"}, {\"type\": \"text\", \"value\": \"skis\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Detect all objects in image_103.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of clock from detection results.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_103.png\"}, {\"type\": \"text\", \"value\": \"clock\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-2 on the image_103.png to highlight the clock.\", \"task\": [\"image-editing\"], \"id\": 3, \"dep\": [2], \"args\": [{\"type\": \"image\", \"value\": \"image_103.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-2\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-3\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_QA,count_object,video_classification",
+            "instruction": "with resources/4c1872_dac872_HEDText2Image_image.png, what could be a possible reason for the blue ribbon on the white horse? what is the count of toasters in the resources/653765_None_input_image.png. Could you please determine if there are any eating chips performances in the resources/9cd757_None_input_video.mp4?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/4c1872_dac872_HEDText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/4c1872_dac872_HEDText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"what could be a possible reason for the blue ribbon on the white horse?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Count the number of toasters in resources/653765_None_input_image.png\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/653765_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"toaster\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: what is the count of toasters in the resources/653765_None_input_image.pngwhat is the count of toasters in the resources/653765_None_input_image.png\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/653765_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"what is the count of toasters in the resources/653765_None_input_image.png\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Recognize all actions in the video resources/9cd757_None_input_video.mp4 by using the `video_classification` tool. 2. Select the category of \\\"eating chips\\\" from the video recognition results and judge whether the action \\\"eating chips\\\" exists in the video resources/9cd757_None_input_video.mp4.\", \"task\": [\"video-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"video\", \"value\": \"resources/9cd757_None_input_video.mp4\"}, {\"type\": \"text\", \"value\": \"eating chips\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-3\"}]}]</Solution>",
+            "level": "hard",
+            "status": "deprecated"
+        },
+        {
+            "type": "image_editing,image_QA",
+            "instruction": "Can you isolate the boat from the background in resources/998346_cf2346_SegText2Image_image.png? can you describe any non-vehicle objects in this image, such as a fire hydrant?",
+            "output": "<Solution>[{\"description\": \"1. Segment all objects in resources/998346_cf2346_SegText2Image_image.png by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of boat from segmentation results; 3. With the obtained masks of boat, separate all target objects from resources/998346_cf2346_SegText2Image_image.png. Then, return the images that only contain the target objects.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/998346_cf2346_SegText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"boat\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"cut out the boat in resources/998346_cf2346_SegText2Image_image.png and the area of boat is given by <GENERATED>-0.\", \"task\": [\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"resources/998346_cf2346_SegText2Image_image.png\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-0\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: resources/998346_cf2346_SegText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/998346_cf2346_SegText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"can you describe any non-vehicle objects in the image, such as a fire hydrant?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_QA,image_detection,image_segmentation",
+            "instruction": "what fashion and food elements contribute to the nostalgic feel of this snapshot KVhr4TH.png? Is the sandwich visible in the image file resources/f98891_215891_PoseText2Image_image.png? Please give me a mask that isolates the traffic light in resources/fc5024_None_input_image.png",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: KVhr4TH.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"KVhr4TH.png\"}, {\"type\": \"text\", \"value\": \"what fashion and food elements contribute to the nostalgic feel of this image?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Detect all objects in resources/f98891_215891_PoseText2Image_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of sandwich from detection results.\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/f98891_215891_PoseText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"sandwich\"}], \"returns\": [{\"type\": \"bbox\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Draw the bounding boxes <GENERATED>-1 on the resources/f98891_215891_PoseText2Image_image.png to highlight the sandwich.\", \"task\": [\"image-editing\"], \"id\": 2, \"dep\": [1], \"args\": [{\"type\": \"image\", \"value\": \"resources/f98891_215891_PoseText2Image_image.png\"}, {\"type\": \"bbox\", \"value\": \"<GENERATED>-1\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Segment all objects from resources/fc5024_None_input_image.png by using `image_instance_segmentation` tool and return all segmented masks with label information in resources/fc5024_None_input_image.png; 2. Select target masks of traffic light from all segmentation masks and return the chosen masks of traffic light.\", \"task\": [\"image-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/fc5024_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"traffic light\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-3\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_generation,image_editing,image_detection",
+            "instruction": "Create a new image using the segmentation from resources/e07058_19a058_LineText2Image_image.png that showcases a cozy cabin in the woods with a dog and a cat, surrounded by snow-covered trees. Can you crop out the dog from given image? I'm looking for the cat in the image file, can you guide me to it?",
+            "output": "<Solution>[{\"description\": \"generate the segmentation map for resources/e07058_19a058_LineText2Image_image.png by using tool\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/e07058_19a058_LineText2Image_image.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Generate a new image conditioned on generated segmentation map <GENERATED>-0 and input text prompt by using `segmentation_text_to_image` tool. The text prompt provided by user describes the details of generated image. Then, return the new generated image.\", \"task\": [\"image-generation\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"The new image showcases a cozy cabin in the woods with a dog, surrounded by snow-covered trees.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"1. Segment all objects in <GENERATED>-1 by using `image_instance_segmentation` tool and obtain semantic masks; 2. Select the semantic masks of dog from segmentation results.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [1], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}, {\"type\": \"text\", \"value\": \"dog\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"Separate all target objects from <GENERATED>-1 using the obtained masks <GENERATED>-2. Then, return all images that only contain the target objects.\", \"task\": [\"image-editing\"], \"id\": 3, \"dep\": [2], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}, {\"type\": \"mask\", \"value\": \"<GENERATED>-2\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"1. Detect all objects in <GENERATED>-1 by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of cat from detection results; 3. Draw bounding boxes on image to highlight the apple.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 4, \"dep\": [1], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}, {\"type\": \"text\", \"value\": \"cat\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-4\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_QA,image_QA",
+            "instruction": "As for the resources/5c2930_b6f930_LineText2Image_image.png, what's happening in the scene? For this input image resources/92e790_44f790_CannyText2Image_image.png, What factors should potential buyers consider when purchasing one of these motorcycles?",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: resources/5c2930_b6f930_LineText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/5c2930_b6f930_LineText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"what's happening in the scene?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Answer questions based on image: resources/92e790_44f790_CannyText2Image_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/92e790_44f790_CannyText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"What factors should potential buyers consider when purchasing one of these motorcycles?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "hard",
+            "status": "deprecated"
+        },
+        {
+            "type": "image_detection,image_detection",
+            "instruction": "Can you make the orange more prominent in the resources/101900_64f900_HEDText2Image_image.png? Find out if the resources/2e2581_80c581_EdgeText2Image_image.png file has a hair drier in it.",
+            "output": "<Solution>[{\"description\": \"1. Detect all objects in resources/101900_64f900_HEDText2Image_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of orange from detection results; 3. Crop the image by the bounding boxes of orange and return the cropped images.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/101900_64f900_HEDText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"orange\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Detect all objects in resources/2e2581_80c581_EdgeText2Image_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of hair drier from detection results; 3. Draw bounding boxes on image to highlight the hair drier.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/2e2581_80c581_EdgeText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"hair drier\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "image_classification,image_detection,image_segmentation,image_QA,image_segmentation",
+            "instruction": "Can you identify the ant in the image_317.png and list all other objects present? Please detect if there is a skateboard in image? Segment all the objects in the file 'image' without any label information. Given the image image_317.png, Why are these people using boats instead of walking through the streets? I need a mask that segments out the cup in image",
+            "output": "<Solution>[{\"description\": \"Recognize all objects in the image_317.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_317.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Detect all objects in image_317.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of skateboard from detection results; 3. Draw bounding boxes on image to highlight the skateboard.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_317.png\"}, {\"type\": \"text\", \"value\": \"skateboard\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Segment anything in image_317.png without label information by using `segment_anything` tool and return the segmentation map.\", \"task\": [\"image-perception\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_317.png\"}], \"returns\": [{\"type\": \"segmentation\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"Answer questions based on image: image_317.png.\", \"task\": [\"visual-question-answering\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_317.png\"}, {\"type\": \"text\", \"value\": \"Why are these people using boats instead of walking through the streets?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"1. Segment all objects from image_317.png by using `image_instance_segmentation` tool and return all segmented masks with label information in image_317.png; 2. Select target masks of cup from all segmentation masks and return the chosen masks of cup.\", \"task\": [\"image-perception\"], \"id\": 4, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"image_317.png\"}, {\"type\": \"text\", \"value\": \"cup\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-4\"}]}]</Solution>",
+            "level": "hard"
+        },
+        {
+            "type": "QA,image_detection,image_QA,image_segmentation,image_classification",
+            "instruction": "In addition to categorizing the different types of clouds and providing a brief overview of their formation process and the atmospheric conditions that contribute to their development, can you also explain how their formation is affected by geographical features and climate change? Furthermore, can you distinguish the visual differences between clouds that form in the troposphere versus those that form in the stratosphere, and how these differences affect atmospheric composition and radiation balance? Finally, can you provide examples of how cloud formations can affect weather patterns and air quality in different regions of the world, and how these impacts may vary with changes in land use and anthropogenic emissions? Please point out the baseball bat in resources/660517_None_input_image.png. are the people posing for a figure resources/504927_None_input_image.png? Can you produce a mask that only shows the suitcase in TKyVcB2Ve.png? classify binderes in resources/291782_4d7782_HEDText2Image_image.png?",
+            "output": "<Solution>[{\"description\": \"Question answering\", \"task\": \"question-answering\", \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"In addition to categorizing the different types of clouds and providing a brief overview of their formation process and the atmospheric conditions that contribute to their development, can you also explain how their formation is affected by geographical features and climate change? Furthermore, can you distinguish the visual differences between clouds that form in the troposphere versus those that form in the stratosphere, and how these differences affect atmospheric composition and radiation balance? Finally, can you provide examples of how cloud formations can affect weather patterns and air quality in different regions of the world, and how these impacts may vary with changes in land use and anthropogenic emissions?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"1. Detect all objects in resources/660517_None_input_image.png by using object detection method and obtain all bounding boxes; 2. Select the bounding boxes of baseball bat from detection results; 3. Draw bounding boxes on image to highlight the baseball bat.\", \"task\": [\"image-perception\", \"image-editing\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/660517_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"baseball bat\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}, {\"description\": \"Answer questions based on image: resources/504927_None_input_image.png.\", \"task\": [\"visual-question-answering\"], \"id\": 2, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/504927_None_input_image.png\"}, {\"type\": \"text\", \"value\": \"are the people posing for a photograph?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-2\"}]}, {\"description\": \"1. Segment all objects from TKyVcB2Ve.png by using `image_instance_segmentation` tool and return all segmented masks with label information in TKyVcB2Ve.png; 2. Select target masks of suitcase from all segmentation masks and return the chosen masks of suitcase.\", \"task\": [\"image-perception\"], \"id\": 3, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"TKyVcB2Ve.png\"}, {\"type\": \"text\", \"value\": \"suitcase\"}], \"returns\": [{\"type\": \"mask\", \"value\": \"<GENERATED>-3\"}]}, {\"description\": \"Recognize all objects in the resources/291782_4d7782_HEDText2Image_image.png by using the `image_classification` tool and return recognized categories.\", \"task\": [\"image-perception\"], \"id\": 4, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/291782_4d7782_HEDText2Image_image.png\"}], \"returns\": [{\"type\": \"category\", \"value\": \"<GENERATED>-4\"}]}]</Solution>",
+            "level": "hard",
+            "status": "deprecated"
+        }
+    ],
+    "extra": [
+        {
+            "type": "image_generation,image_QA",
+            "instruction": "Could you please generate an image that features trees, humans, flowers, cats, and other specific objects? I want it to be visually appealing and diverse. Then, describe the generated image to check whether it meet my requirements",
+            "output": "<Solution>[{\"description\": \"Generate an image that features trees, humans, flowers, cats, and other specific objects.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"an image that features trees, humans, flowers, cats, and other specific objects\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Describe the generated image to check whether it meets the requirements.\", \"task\": [\"visual-question-answering\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"describe the generated image\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation,image_detection",
+            "instruction": "Could you please generate an image that features trees, humans, flowers, cats, and other specific objects? I want it to be visually appealing and diverse. please help me hightlight the cats in the image",
+            "output": "<Solution>[{\"description\": \"Generate a new image that features trees, humans, flowers, cats, and other specific objects. The image should be visually appealing and diverse.\", \"task\": [\"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"text\", \"value\": \"The new image should feature trees, humans, flowers, cats, and other specific objects. It should be visually appealing and diverse.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Highlight the cats in the generated image <GENERATED>-0.\", \"task\": [\"image-perception\",\"image-editing\"], \"id\": 1, \"dep\": [0], \"args\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}, {\"type\": \"text\", \"value\": \"cats\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_QA,count_object",
+            "instruction": "what type of animals are portrayed in the figure e31038_image.png? Kindly provide me with the count of cats in the input picture",
+            "output": "<Solution>[{\"description\": \"Answer questions based on image: what type of animals are portrayed in the figure e31038_image.png?\", \"task\": [\"visual-question-answering\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"e31038_image.png\"}, {\"type\": \"text\", \"value\": \"what type of animals are portrayed in the figure?\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-0\"}]}, {\"description\": \"Count the number of cats in the input picture e31038_image.png\", \"task\": [\"image-perception\"], \"id\": 1, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"e31038_image.png\"}, {\"type\": \"text\", \"value\": \"cat\"}], \"returns\": [{\"type\": \"text\", \"value\": \"<GENERATED>-1\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "parallel_image_QA",
+            "instruction": "describe image_459.png and image_23.png in details, and tell me the difference of two images",
+            "output": "<Solution>[{'description': 'Describe image image_459.png in details', 'task': ['image-perception'], 'id': 0, 'dep': [-1], 'args': [{'type': 'image', 'value': 'image_459.png'}], 'returns': [{'type': 'text', 'value': '<GENERATED>-0'}]}, {'description': 'Describe image image_23.png in details', 'task': ['image-perception'], 'id': 1, 'dep': [-1], 'args': [{'type': 'image', 'value': 'image_23.png'}], 'returns': [{'type': 'text', 'value': '<GENERATED>-1'}]}, {'description': 'Tell the difference of two images', 'task': ['question-answering'], 'id': 2, 'dep': [0, 1], 'args': [{'type': 'text', 'value': 'What is the difference between image_459.png and image_23.png?'}], 'returns': [{'type': 'text', 'value': '<GENERATED>-2'}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "generate a similar image from the given image",
+            "output": "<Solution>[{\"description\": \"Image generation: generate a similar image from the given resources/f0e508_bda508_SegText2Image_image.png\", \"task\": [\"image-perception\", \"image-processing\", \"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/f0e508_bda508_SegText2Image_image.png\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "image_generation",
+            "instruction": "Could you please generate a new image based on the pose from resources/a53706_7be706_PoseText2Image_image.png? The new image should be a serene lake with a mountain in the background and a boat on the water.",
+            "output": "<Solution>[{\"description\": \"Could you please generate a new image based on the pose from resources/a53706_7be706_PoseText2Image_image.png? The new image should be a serene lake with a mountain in the background and a boat on the water.\", \"task\": [\"image-processing\", \"image-generation\"], \"id\": 0, \"dep\": [-1], \"args\": [{\"type\": \"image\", \"value\": \"resources/a53706_7be706_PoseText2Image_image.png\"}, {\"type\": \"text\", \"value\": \"The new image should be a serene lake with a mountain in the background and a boat on the water.\"}], \"returns\": [{\"type\": \"image\", \"value\": \"<GENERATED>-0\"}]}]</Solution>",
+            "level": "medium"
+        },
+        {
+            "type": "parallel_image_QA",
+            "instruction": "For image_12.png and image_23.png, which image has lion in it",
+            "output": "<Solution>[{'description': 'Answer questions based on image: For image_12.png, is there a lion in the image?', 'task': ['visual-question-answering'], 'id': 0, 'dep': [-1], 'args': [{'type': 'image', 'value': 'image_12.png'}, {'type': 'text', 'value': 'Is there a lion in the image?'}], 'returns': [{'type': 'text', 'value': '<GENERATED>-0'}]}, {'description': 'Answer questions based on image: For image_23.png, is there a lion in the image?', 'task': ['visual-question-answering'], 'id': 1, 'dep': [-1], 'args': [{'type': 'image', 'value': 'image_23.png'}, {'type': 'text', 'value': 'Is there a lion in the image?'}], 'returns': [{'type': 'text', 'value': '<GENERATED>-1'}]}]</Solution>",
+            "level": "medium"
+        }
+    ]
+}
